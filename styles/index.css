@@ -1,77 +1,60 @@
 /* section 1 */
 .headerSectionHero{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 .butSectionHero{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 187.5%;    
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.87;    
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
 
 /* section whyWe */
 .headerListSectWhyWe{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 114.285714%;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
 }
 .textListSectWhyWe{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
 /* section ourTeam */
 .titleWorks{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 118.75%;    
+    line-height: 1.18;    
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 .posWork{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 118.75%;    
+    line-height: 1.18;    
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
 .headerSects {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 116.666667%;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
