@@ -1,0 +1,43 @@
+/* header */
+.headerLogo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 119.230769%;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+}
+.menuText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 117.214286%;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.blackHeaderLogo{
+    color: #212121;
+}
+.menuText:hover{
+    color: #2196F3;
+    transition: 0.2s;
+}
+.menuCont{
+    color: #757575;
+}
+
+/* footer */
+.adres{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;    
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}

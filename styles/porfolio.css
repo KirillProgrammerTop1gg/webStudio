@@ -1,0 +1,33 @@
+.butListFilt{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 161%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    transition: 0.2s;
+}
+.butListFilt:hover {
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+.nameProject{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.catProject{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188%;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
