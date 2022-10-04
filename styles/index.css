@@ -1,5 +1,5 @@
-/* section 1 */
-.headerSectionHero{
+/* section hero */
+.hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -8,7 +8,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.butSectionHero{
+.hero-but{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;    
@@ -17,7 +17,7 @@
 }
 
 /* section whyWe */
-.headerListSectWhyWe{
+.whyWe-cell-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -25,7 +25,7 @@
     text-transform: uppercase;
     color: #212121;
 }
-.textListSectWhyWe{
+.whyWe-cell-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -34,7 +34,7 @@
 }
 
 /* section ourTeam */
-.titleWorks{
+.ourTeam-worker-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;    
@@ -42,7 +42,7 @@
     letter-spacing: 0.03em;
     color: #212121;
 }
-.posWork{
+.ourTeam-worker-pos{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;    
@@ -51,7 +51,7 @@
     color: #757575;
 }
 
-.headerSects {
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;

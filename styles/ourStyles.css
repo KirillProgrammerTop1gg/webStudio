@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto';
 }
 /* header */
-.headerLogo{
+.header-logo{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -11,7 +11,7 @@ body{
     color: #2196F3;
     text-decoration: none;
 }
-.menuText{
+.header-a{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
@@ -20,19 +20,19 @@ body{
     text-decoration: none;
     transition: 0.2s;
 }
-.blackHeaderLogo{
+.header-logo-blac{
     color: #212121;
 }
-.menuText:hover{
+.header-a:hover{
     color: #2196F3;
     transition: 0.2s;
 }
-.menuCont{
+.header-a-contacts{
     color: #757575;
 }
 
 /* footer */
-.adres{
+.footer-adress{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;    

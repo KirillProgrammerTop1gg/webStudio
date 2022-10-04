@@ -1,4 +1,4 @@
-.butListFilt{
+.portfolio-filter-but{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.61;
@@ -7,18 +7,18 @@
     color: #212121;
     transition: 0.2s;
 }
-.butListFilt:hover {
-    color: #FFFFFF;
+.portfolio-filter-but:hover {
+    color: #2196F3;
     transition: 0.2s;
 }
-.nameProject{
+.portfolio-project-name{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
 }
-.catProject{
+.portfolio-project-category{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
