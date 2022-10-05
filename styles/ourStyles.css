@@ -1,6 +1,9 @@
 body{
     font-family: 'Roboto';
 }
+.portfolio-filter-ul, .portfolio-projects-ul, .header-ul, .whyWe-ul, .whatWeDo-ul, .ourTeam-ul{
+    list-style-type: none;
+}
 /* header */
 .header-logo{
     font-family: 'Raleway';
@@ -20,7 +23,7 @@ body{
     text-decoration: none;
     transition: 0.2s;
 }
-.header-logo-blac{
+.header-logo-black{
     color: #212121;
 }
 .header-a:hover{
