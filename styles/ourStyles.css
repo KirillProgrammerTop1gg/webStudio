@@ -27,7 +27,7 @@ body{
     color: #2196F3;
     transition: 0.2s;
 }
-.header-logo-black{
+.logo-black{
     color: #212121;
 }
 .header-link-contacts{
@@ -39,6 +39,7 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;    
+    font-style: normal;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }

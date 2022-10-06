@@ -20,7 +20,7 @@
 }
 
 /* section whyWe */
-.whyWe-cell-title{
+.whyWe-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -28,7 +28,7 @@
     text-transform: uppercase;
     color: #212121;
 }
-.whyWe-cell-text{
+.whyWe-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -37,7 +37,7 @@
 }
 
 /* section ourTeam */
-.ourTeam-worker-name{
+.worker-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;    
@@ -45,7 +45,7 @@
     letter-spacing: 0.03em;
     color: #212121;
 }
-.ourTeam-worker-pos{
+.worker-pos{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;    
