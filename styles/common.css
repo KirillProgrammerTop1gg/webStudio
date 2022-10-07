@@ -1,7 +1,7 @@
 body{
     font-family: 'Roboto';
 }
-.portfolio-filter-list, .portfolio-projects-list, .header-list, .whyWe-list, .whatWeDo-list, .ourTeam-list{
+.portfolio-filter, .portfolio-projects, .header-list, .whyWe-list, .whatWeDo-list, .ourTeam-list{
     list-style-type: none;
 }
 /* header */
@@ -30,7 +30,7 @@ body{
 .logo-black{
     color: #212121;
 }
-.header-link-contacts{
+.header-contacts{
     color: #757575;
 }
 
