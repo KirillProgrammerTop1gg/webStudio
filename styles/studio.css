@@ -19,8 +19,8 @@
     color: #FFFFFF;
 }
 
-/* section whyWe */
-.whyWe-title{
+/* section benefits */
+.benefits-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -28,7 +28,7 @@
     text-transform: uppercase;
     color: #212121;
 }
-.whyWe-text{
+.benefits-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
