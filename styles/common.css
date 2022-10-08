@@ -1,9 +1,6 @@
 body{
     font-family: 'Roboto';
 }
-.portfolio-filter, .portfolio-projects, .header-list, .whyWe-list, .whatWeDo-list, .ourTeam-list{
-    list-style-type: none;
-}
 /* header */
 .header-logo{
     font-family: 'Raleway';
