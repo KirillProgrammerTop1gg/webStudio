@@ -1,5 +1,5 @@
 /* section hero */
-.section-hero{
+.hero-section{
     background-color: #2F303A;
 }
 .hero-title{
@@ -36,8 +36,8 @@
     color: #757575;
 }
 
-/* section ourTeam */
-.worker-name{
+/* section tea */
+.team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;    
@@ -45,7 +45,7 @@
     letter-spacing: 0.03em;
     color: #212121;
 }
-.worker-pos{
+.team-pos{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;    
