@@ -135,7 +135,7 @@
     justify-content: space-between;
     margin: 16px auto 0;
 }
-.team-soc{
+.team-link{
     display: flex;
     width: 44px;
     height: 44px;
@@ -147,12 +147,12 @@
     fill: #AFB1B8;
     transition: 0.2s;
 }
-.team-soc:hover{
+.team-link:hover{
     border-radius: 50%;
     background: #2196F3;
     transition: 0.2s;
 }
-.team-soc:hover>svg{
+.team-link:hover > svg{
     fill: #fff;
     transition: 0.2s;
 }
