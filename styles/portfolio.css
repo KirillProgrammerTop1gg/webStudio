@@ -40,6 +40,7 @@
     border: 1px solid #EEEEEE;
     padding-bottom: 20px;
     margin-top: 0;
+    position: relative;
 }
 .project-item:nth-child(n+4){
     margin-top: 30px;
@@ -62,4 +63,24 @@
     letter-spacing: 0.03em;
     color: #757575;
     margin-top: 4px;
+}
+.project-overlay{
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    width: 370px;
+    height: 294px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    top: 0;
+    padding: 63px 24px;
+    opacity: 0;
+    transition: 0.2s;
+}
+.project-item:hover>.project-overlay{
+    opacity: 1;
+    transition: 0.2s;
 }
