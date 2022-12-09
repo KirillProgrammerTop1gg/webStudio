@@ -176,11 +176,9 @@
 .team-link:hover{
     border-radius: 50%;
     background: #2196F3;
-    transition: 0.2s;
 }
 .team-link:hover > svg{
     fill: #fff;
-    transition: 0.2s;
 }
 
 /* section clients */
@@ -209,11 +207,9 @@
 }
 .clients-item:hover{
     border: 1px solid #2196F3;
-    transition: 0.2s;
 }
 .clients-item:hover > svg{
     fill: #2196F3;
-    transition: 0.2s;
 }
 
 .services-title, .team-title, .clients-title{
@@ -264,7 +260,6 @@
 }
 .form-container:hover>.form-icon{
     fill: #2196F3;
-    transition: 0.2s
 }
 .form-item{
     margin-top: 10px;

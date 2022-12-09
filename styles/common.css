@@ -50,7 +50,6 @@ body{
 }
 .header-link:hover{
     color: #2196F3;
-    transition: 0.2s;
 }
 .header-overlay::after{
     content: '';
@@ -148,7 +147,6 @@ body{
 }
 .footer-soc:hover{
     background: #2196F3;
-    transition: 0.2s;
 }
 .footer-column3{
     margin-left: 93px;
