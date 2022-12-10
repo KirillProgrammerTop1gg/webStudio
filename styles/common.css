@@ -44,7 +44,7 @@ body{
     text-decoration: none;
     align-items: center;
     display: flex;
-    transition: 0.2s;
+    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
     position: relative;
     height: 100%;
 }
@@ -139,11 +139,11 @@ body{
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
-    transition: 0.2s;
+    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
 }
 .footer-svg{
     fill: #FFF;
-    transition: 0.2s;
+    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
 }
 .footer-soc:hover{
     background: #2196F3;
@@ -192,6 +192,10 @@ body{
     padding: 15px 16px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: ease 0.2s;
+}
+.footer-field:hover{
+    border-color: #fff;
 }
 .footer-send{
     fill: #fff;

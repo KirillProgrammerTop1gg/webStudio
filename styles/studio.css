@@ -167,11 +167,11 @@
     height: 44px;
     justify-content: center;
     align-items: center;
-    transition: 0.2s;
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s;
 }
 .team-svg{
     fill: #AFB1B8;
-    transition: 0.2s;
+    transition: ease 0.2s;
 }
 .team-link:hover{
     border-radius: 50%;
@@ -199,11 +199,11 @@
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: 0.2s;
+    transition: ease-in-out 0.2s;
 }
 .clients-svg{
     fill: #AFB1B8;
-    transition: 0.2s;
+    transition: ease-out 0.2s;
 }
 .clients-item:hover{
     border: 1px solid #2196F3;
@@ -256,10 +256,11 @@
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: 0.2s
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s
 }
 .form-container:hover>.form-icon{
     fill: #2196F3;
+    transition: ease 0.2s;
 }
 .form-item{
     margin-top: 10px;
@@ -296,7 +297,7 @@
 .form-field:focus+.form-svg{
     fill: #2196F3;
 }
-.form-field:hover, .form-textarea:focus{
+.form-field:hover, .form-textarea:hover{
     border-color: #2196F3;
 }
 .form-field{
@@ -356,10 +357,10 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 2;
-    transition: 0.4s;
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }
 .overlay.is-hidden{
     opacity: 0;
     pointer-events: none;
-    transition: 0.4s;
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }

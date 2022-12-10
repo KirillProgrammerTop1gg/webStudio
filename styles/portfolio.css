@@ -19,7 +19,7 @@
     background: #F5F4FA;
     border: 0;
     border-radius: 4px;
-    transition: 0.2s;
+    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
     padding: 6px 22px;
 }
 .filter-but:hover{
@@ -77,8 +77,11 @@
     top: 0;
     padding: 63px 24px;
     opacity: 0;
-    transition: 0.2s;
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s;
 }
 .project-item:hover>.project-overlay{
     opacity: 1;
+}
+.project-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
