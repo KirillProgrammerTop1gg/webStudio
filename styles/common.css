@@ -195,7 +195,7 @@ body{
     transition: ease 0.2s;
 }
 .footer-field:hover{
-    border-color: #fff;
+    border-color: #2196F3;
 }
 .footer-send{
     fill: #fff;
