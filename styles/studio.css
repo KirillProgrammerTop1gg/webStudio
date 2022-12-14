@@ -294,7 +294,7 @@
     cursor: pointer;
     margin-top: 4px;
 }
-.form-field:focus+.form-svg{
+.form-field:hover+.form-svg, .form-field:focus+.form-svg{
     fill: #2196F3;
 }
 .form-field:hover, .form-textarea:hover{
