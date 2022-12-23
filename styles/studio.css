@@ -167,11 +167,11 @@
     height: 44px;
     justify-content: center;
     align-items: center;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s;
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s;
 }
 .team-svg{
     fill: #AFB1B8;
-    transition: ease 0.2s;
+    transition: all ease 0.2s;
 }
 .team-link:hover{
     border-radius: 50%;
@@ -179,6 +179,7 @@
 }
 .team-link:hover > svg{
     fill: #fff;
+    transform: rotate(1800deg);
 }
 
 /* section clients */
@@ -199,17 +200,19 @@
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
 }
 .clients-svg{
     fill: #AFB1B8;
-    transition: ease-out 0.2s;
+    transition: all ease-out 0.2s;
 }
 .clients-item:hover{
     border: 1px solid #2196F3;
+    transform: skew(-25deg, 10deg);
 }
 .clients-item:hover > svg{
     fill: #2196F3;
+    transform: translate(30px, 10px);
 }
 
 .services-title, .team-title, .clients-title{
@@ -256,11 +259,11 @@
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s
 }
 .form-container:hover>.form-icon{
     fill: #2196F3;
-    transition: ease 0.2s;
+    transition: all ease 0.2s;
 }
 .form-item{
     margin-top: 10px;
@@ -293,9 +296,12 @@
     border-radius: 4px;
     cursor: pointer;
     margin-top: 4px;
+    transition: all ease 0.2s;
 }
 .form-field:hover+.form-svg, .form-field:focus+.form-svg{
     fill: #2196F3;
+    transform: rotate(360deg) scale(1.5);
+    transition: all ease-in-out 0.3s;
 }
 .form-field:hover, .form-textarea:hover{
     border-color: #2196F3;
@@ -357,10 +363,10 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 2;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }
 .overlay.is-hidden{
     opacity: 0;
     pointer-events: none;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }

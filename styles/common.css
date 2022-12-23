@@ -44,7 +44,7 @@ body{
     text-decoration: none;
     align-items: center;
     display: flex;
-    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
+    transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
     position: relative;
     height: 100%;
 }
@@ -63,10 +63,12 @@ body{
 }
 .header-link:hover>svg{
     fill: #2196F3;
+    transform: rotate(360deg);
 }
 .header-svg{
     fill: #757575;
     margin-right: 10px;
+    transition: all ease-out 0.2s;
 }
 .logo-black{
     color: #212121;
@@ -76,6 +78,9 @@ body{
 }
 .header-contact{
     color: #757575;
+}
+.header-contact:hover{
+    transform: translateY(-5px) skew(-10deg);
 }
 
 /* footer */
@@ -139,14 +144,15 @@ body{
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
-    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
+    transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
 }
 .footer-svg{
     fill: #FFF;
-    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
+    transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
 }
 .footer-soc:hover{
     background: #2196F3;
+    transform: rotate(360deg);
 }
 .footer-column3{
     margin-left: 93px;
@@ -192,7 +198,7 @@ body{
     padding: 15px 16px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: ease 0.2s;
+    transition: all ease 0.2s;
 }
 .footer-field:hover{
     border-color: #2196F3;
