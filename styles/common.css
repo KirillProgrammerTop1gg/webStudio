@@ -151,7 +151,7 @@ body{
     fill: #FFF;
     transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
 }
-.socials__svg:hover{
+.socials__item:hover{
     background: #2196F3;
     transform: rotate(360deg);
 }
