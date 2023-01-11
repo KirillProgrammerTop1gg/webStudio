@@ -1,0 +1,32 @@
+/* section clients */
+.clients-section{
+    padding: 94px 0;
+}
+.clients-section__list{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+.clients-section__item{
+    height: 90px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: all ease-in-out 0.2s;
+}
+.clients-section__svg{
+    fill: #AFB1B8;
+    transition: all ease-out 0.2s;
+}
+.clients-section__item:hover{
+    border: 1px solid #2196F3;
+    transform: skew(-25deg, 10deg);
+}
+.clients-section__item:hover > svg{
+    fill: #2196F3;
+    transform: translate(30px, 10px);
+}
