@@ -4,29 +4,28 @@
 }
 .clients-section__list{
     margin-top: 50px;
-    display: flex;
+    @extend %flex;
     justify-content: space-between;
     width: 1170px;
 }
 .clients-section__item{
     height: 90px;
     width: 170px;
-    display: flex;
+    @extend %flex;
     justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
+    border: $normal-styles-border $clients-section-item-border-color;
     border-radius: 4px;
     transition: all ease-in-out 0.2s;
 }
 .clients-section__svg{
-    fill: #AFB1B8;
+    fill: $normal-svg-color;
     transition: all ease-out 0.2s;
 }
 .clients-section__item:hover{
-    border: 1px solid #2196F3;
+    border: $normal-styles-border $active-color;
     transform: skew(-25deg, 10deg);
 }
 .clients-section__item:hover > svg{
-    fill: #2196F3;
+    fill: $active-color;
     transform: translate(30px, 10px);
 }

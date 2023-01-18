@@ -8,8 +8,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: $form-background-color;
+    box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
     border-radius: 4px;
 }
 .form-section__title{
@@ -19,24 +19,23 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $main-color;
 }
 .form-section__close{
     position: absolute;
-    display: flex;
-    align-items: center;
+    @extend %flex;
     justify-content: center;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: $svg-color;
+    border: $normal-styles-border $form-close-border;
     border-radius: 50%;
     transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s
 }
 .form-section__close:hover>.form-section__icon{
-    fill: #2196F3;
+    fill: $active-color;
     transition: all ease 0.2s;
 }
 .form-section__item{
@@ -52,7 +51,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $submain-color;
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -63,22 +62,22 @@
     font-size: 12px;
     line-height: 1.17;    
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $submain-color;
 }
 .form-section__field, .form-section__textarea{
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: $normal-styles-border $form-field-border;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 4px;
     transition: all ease 0.2s;
 }
 .form-section__field:hover+.form-section__svg, .form-section__field:focus+.form-section__svg{
-    fill: #2196F3;
+    fill: $active-color;
     transform: rotate(360deg) scale(1.5);
     transition: all ease-in-out 0.3s;
 }
 .form-section__field:hover, .form-section__textarea:hover{
-    border-color: #2196F3;
+    border-color: $active-color;
 }
 .form-section__field{
     padding: 12px 18px 12px 42px;
@@ -100,7 +99,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: $form-textarea-color;
 }
 .form-section__checkbox{
     width: 16px;
@@ -110,14 +109,14 @@
     margin-left: 8.38px;
 }
 .form-section__link:link, .form-section__link:visited{
-    color: #2196F3;
-    text-decoration: underline #2196F3;
+    color: $active-color;
+    text-decoration: underline $active-color;
 }
 .form-section__send{
     width: 200px;
     height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: $active-color;
+    box-shadow: $form-boxshadow;
     border-radius: 4px;
     border: 0;
     display: block;
@@ -127,7 +126,7 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $form-color;
 }
 .overlay{
     position: fixed;
@@ -135,7 +134,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: $overlay-background;
     z-index: 2;
     transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }

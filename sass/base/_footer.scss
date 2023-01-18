@@ -1,10 +1,10 @@
 /* footer */
 .footer-page__logo--white{
-    color: #FFFFFF;
+    color: $footer-color;
 }
 .footer-page{
     padding: 60px 0;
-    background-color: #2F303A;
+    background-color: $footer-background-color;
 }
 .footer-page__container{
     width: 1200px;
@@ -25,9 +25,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;    
-    font-style: normal;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $footer-color;
 }
 .contact-information__contact{
     font-weight: 400;
@@ -46,7 +45,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $footer-color;
 }
 .socials{
     margin-top: 20px;
@@ -58,18 +57,17 @@
     width: 44px;
     border-radius: 50%;
     height: 44px;
-    display: flex;
+    @extend %flex;
     justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: $socials-item-background-color;
     transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
 }
 .socials__svg{
-    fill: #FFF;
+    fill: $footer-color;
     transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
 }
 .socials__item:hover{
-    background: #2196F3;
+    background: $active-color;
     transform: rotate(360deg);
 }
 .footer-page__column--3{
@@ -77,19 +75,18 @@
     padding-top: 12px;
 }
 .footer-form{
-    display: flex;
+    @extend %flex;
     justify-content: space-between;
     width: 570px;
     margin-top: 20px;
 }
 .footer-form__but{
-    display: flex;
-    align-items: center;
+    @extend %flex;
     justify-content: center;
     width: 200px;
     height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: $active-color;
+    box-shadow: $footer-button-shadow;
     border-radius: 5px;
     border: 0;
     font-family: 'Roboto';
@@ -100,13 +97,13 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $footer-color;
 }
 .footer-form__field{
     width: 358px;
     height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: $normal-styles-border $footer-link-border;
+    filter: drop-shadow($footer-button-shadow);
     border-radius: 4px;
     background-color: transparent;
     font-family: 'Roboto';
@@ -115,13 +112,13 @@
     line-height: 1.25;
     padding: 15px 16px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $footer-link-color;
     transition: all ease 0.2s;
 }
 .footer-form__field:hover{
-    border-color: #2196F3;
+    border-color: $active-color;
 }
 .footer-form__svg{
-    fill: #fff;
+    fill: $svg-color;
     margin-left: 12px;
 }

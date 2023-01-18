@@ -3,22 +3,21 @@
     height: 80px;
 }
 .header-page__container{
-    display: flex;
-    align-items: center;
+    @extend %flex;
     height: inherit;
 }
 .header-page__nav{
     height: inherit;
 }
 .pages{
-    display: flex;
+    @extend %flex;
     justify-content: space-between;
     width: 290px;
     margin-left: 93px;
     height: inherit;
 }
 .contacts{
-    display: flex;
+    @extend %flex;
     justify-content: space-between;
     width: 333px;
     margin-left: auto;
@@ -29,7 +28,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: $active-color;
     text-decoration: none;
 }
 .pages__link, .contacts__link{
@@ -37,16 +36,15 @@
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: $main-color;
     text-decoration: none;
-    align-items: center;
-    display: flex;
+    @extend %flex;
     transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
     position: relative;
     height: 100%;
 }
 .pages__link:hover, .contacts__link:hover{
-    color: #2196F3;
+    color: $active-color;
 }
 .pages__overlay::after{
     content: '';
@@ -55,24 +53,24 @@
     height: 3px;
     position: absolute;
     transform: translateY(39px);
-    background-color: #2196F3;
+    background-color: $active-color;
     border-radius: 5px;
     transition: all ease-in 0.2s;
 }
 .contacts__link:hover>svg{
-    fill: #2196F3;
+    fill: $active-color;
     transform: rotate(360deg);
 }
 .contacts__svg{
-    fill: #757575;
+    fill: $submain-color;
     margin-right: 10px;
     transition: all ease-out 0.2s;
 }
 .header-page__logo--black{
-    color: #212121;
+    color: $main-color;
 }
 .contacts__link{
-    color: #757575;
+    color: $submain-color;
 }
 .contacts__link:hover{
     transform: translateY(-5px) skew(-10deg);
