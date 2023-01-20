@@ -3,91 +3,87 @@
     border: 1px solid $portfolio-border;
     padding: 94px 0;
 }
-
 .filter{
-    @extend %flex;
-    justify-content: space-between;
+    @include flex(space-between);
     margin: 0 auto;
     width: 611px;
-}
-.filter__but{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.61;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $main-color;
-    background: $button-filter-background-color;
-    border: 0;
-    border-radius: 4px;
-    transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
-    padding: 6px 22px;
-}
-.filter__but:hover{
-    color: $portfolio-color;
-    background: $active-color;
-    box-shadow: $filter-button-active;
-    /* transform: translateY(-10px) rotate(360deg); */
-    transform: translateY(-10px);
-}
+    &__but{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.61;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        background: $button-filter-background-color;
+        border: 0;
+        border-radius: 4px;
+        transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
+        padding: 6px 22px;
+        &:hover{
+            color: $portfolio-color;
+            background: $active-color;
+            box-shadow: $filter-button-active;
+            transform: translateY(-10px);
+        }
+    }
 
+}
 .projects{
-    @extend %flex;
+    @include flex(space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 50px;
-}
-.projects__item{
-    border: $normal-styles-border $project-border;
-    padding-bottom: 20px;
-    margin-top: 0;
-    position: relative;
-    transition: all ease-out 0.2s;
-}
-.projects__item:nth-child(n+4){
-    margin-top: 30px;
-}
-.projects__texts{
-    margin-top: 20px;
-    padding: 0 24px;
-}
-.projects__name{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $main-color;
-}
-.projects__category{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: $submain-color;
-    margin-top: 4px;
-}
-.projects__overlay{
-    position: absolute;
-    background: $project-overlay-background-color;
-    width: 370px;
-    height: 294px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $portfolio-color;
-    top: 0;
-    padding: 63px 24px;
-    opacity: 0;
-    transition: all cubic-bezier(.11,.2,.55,1.27) 0.3s;
-    transform: translateY(50px) scale(1.1) rotate(10deg);
-}
-.projects__item:hover>.projects__overlay{
-    opacity: 1;
-    transform: translateY(0px) scale(1) rotate(0deg);
-}
-.projects__item:hover{
-    box-shadow: $project_boxshadow;
-    transform: scale(1.1);
+    &__item{
+        border: $normal-styles-border $project-border;
+        padding-bottom: 20px;
+        margin-top: 0;
+        position: relative;
+        transition: all ease-out 0.2s;
+        &:nth-child(n+4){
+            margin-top: 30px;
+        }
+        &:hover>.projects__overlay{
+            opacity: 1;
+            transform: translateY(0px) scale(1) rotate(0deg);
+        }
+        &:hover{
+            box-shadow: $project_boxshadow;
+            transform: scale(1.1);
+        }
+    }
+    &__texts{
+        margin-top: 20px;
+        padding: 0 24px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $main-color;
+    }
+    &__category{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        color: $submain-color;
+        margin-top: 4px;
+    }
+    &__overlay{
+        position: absolute;
+        background: $project-overlay-background-color;
+        width: 370px;
+        height: 294px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        color: $portfolio-color;
+        top: 0;
+        padding: 63px 24px;
+        opacity: 0;
+        transition: all cubic-bezier(.11,.2,.55,1.27) 0.3s;
+        transform: translateY(50px) scale(1.1) rotate(10deg);
+    }
 }

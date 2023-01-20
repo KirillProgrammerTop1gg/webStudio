@@ -4,54 +4,50 @@
     padding: 94px 0;
 }
 .workers{
-    @extend %flex;
-    justify-content: space-between;
+    @include flex(space-between);
     margin-top: 50px;
-}
-.workers__worker{
-    background: $worker-background-color;
-    box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
-}
-.workers__name{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;    
-    @extend %textAlingLet;
-    color: $main-color;
-    margin-top: 30px;
-}
-.workers__pos{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;    
-    @extend %textAlingLet;
-    color: $submain-color;
-    margin-top: 10px;
-}
-.workers__socials{
-    display: flex;
-    width: 206px;
-    justify-content: space-between;
-    margin: 16px auto 0;
-}
-.workers__link{
-    @extend %flex;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s;
-}
-.workers__svg{
-    fill: #AFB1B8;
-    transition: all ease 0.2s;
-}
-.workers__link:hover{
-    border-radius: 50%;
-    background: $active-color;
-}
-.workers__link:hover > svg{
-    fill: $svg-color;
-    transform: rotate(1800deg);
+    &__worker{
+        background: $worker-background-color;
+        box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
+        border-radius: 0px 0px 4px 4px;
+        padding-bottom: 30px;
+    }
+    &__name{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;    
+        @extend %textAlingLet;
+        color: $main-color;
+        margin-top: 30px;
+    }
+    &__pos{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;    
+        @extend %textAlingLet;
+        color: $submain-color;
+        margin-top: 10px;
+    }
+    &__socials{
+        @include flex(space-between);
+        @include size-of-box(206px, auto);
+        margin: 16px auto 0;
+    }
+    &__link{
+        @include flex;
+        @include size-of-box(44px, 44px);
+        transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s;
+        &:hover{
+            border-radius: 50%;
+            background: $active-color;
+        }
+        &:hover > svg{
+            fill: $svg-color;
+            transform: rotate(1800deg);
+        }
+    }
+    &__svg{
+        fill: #AFB1B8;
+        transition: all ease 0.2s;
+    }
 }

@@ -1,0 +1,9 @@
+@mixin flex($justify-content-stat:center){
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content-stat;
+}
+@mixin size-of-box($width, $height){
+    width: $width;
+    height: $height;
+}

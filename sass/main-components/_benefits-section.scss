@@ -1,50 +1,50 @@
 /* section benefits */
 .benefits-section{
     padding-top: 94px;
-}
-.benefits-section__list{
-    @extend %flex;
-    justify-content: space-between;
-}
-.benefits-section__item:before{
-    width: 270px;
-    height: 120px;
-    content: '';
-    display: block;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background: $benefits-icons-background-color;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.benefits-section__item:nth-child(1)::before{
-    background-image: url('../imgs/imgDecorative/icon1.png');
-}
-.benefits-section__item:nth-child(2)::before{
-    background-image: url('../imgs/imgDecorative/icon2.png');
-}
-.benefits-section__item:nth-child(3)::before{
-    background-image: url('../imgs/imgDecorative/icon3.png');
-}
-.benefits-section__item:nth-child(4)::before{
-    background-image: url('../imgs/imgDecorative/icon4.png');
-}
-.benefits-section__title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $main-color;
-    width: 270px;
-}
-.benefits-section__text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $submain-color;
-    width: 270px;
-    margin-top: 10px;
+    &__list{
+        @include flex(space-between);
+    }
+    &__item:before{
+        @include size-of-box(270px, 120px);
+        content: '';
+        display: block;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background: $benefits-icons-background-color;
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__item{
+        &:nth-child(1)::before{
+            background-image: url('../imgs/imgDecorative/icon1.png');
+        }
+        &:nth-child(2)::before{
+            background-image: url('../imgs/imgDecorative/icon2.png');
+        }
+        &:nth-child(3)::before{
+            background-image: url('../imgs/imgDecorative/icon3.png');
+        }
+        &:nth-child(4)::before{
+            background-image: url('../imgs/imgDecorative/icon4.png');
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+        width: 270px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $submain-color;
+        width: 270px;
+        margin-top: 10px;
+    }
 }

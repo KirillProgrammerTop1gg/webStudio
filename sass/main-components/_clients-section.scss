@@ -1,31 +1,28 @@
 /* section clients */
 .clients-section{
     padding: 94px 0;
-}
-.clients-section__list{
-    margin-top: 50px;
-    @extend %flex;
-    justify-content: space-between;
-    width: 1170px;
-}
-.clients-section__item{
-    height: 90px;
-    width: 170px;
-    @extend %flex;
-    justify-content: center;
-    border: $normal-styles-border $clients-section-item-border-color;
-    border-radius: 4px;
-    transition: all ease-in-out 0.2s;
-}
-.clients-section__svg{
-    fill: $normal-svg-color;
-    transition: all ease-out 0.2s;
-}
-.clients-section__item:hover{
-    border: $normal-styles-border $active-color;
-    transform: skew(-25deg, 10deg);
-}
-.clients-section__item:hover > svg{
-    fill: $active-color;
-    transform: translate(30px, 10px);
+    &__list{
+        margin-top: 50px;
+        @include flex(space-between);
+        @include size-of-box(1170px, auto);
+    }
+    &__svg{
+        fill: $normal-svg-color;
+        transition: all ease-out 0.2s;
+    }
+    &__item{
+        @include size-of-box(170px, 90px);
+        @include flex;
+        border: $normal-styles-border $clients-section-item-border-color;
+        border-radius: 4px;
+        transition: all ease-in-out 0.2s;
+        &:hover{
+            border: $normal-styles-border $active-color;
+            transform: skew(-25deg, 10deg);
+        }
+        &:hover > svg{
+            fill: $active-color;
+            transform: translate(30px, 10px);
+        }
+    }
 }

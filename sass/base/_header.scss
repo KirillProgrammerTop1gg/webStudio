@@ -1,77 +1,85 @@
 /* header */
 .header-page{
     height: 80px;
-}
-.header-page__container{
-    @extend %flex;
-    height: inherit;
-}
-.header-page__nav{
-    height: inherit;
+    &__container{
+        @include flex;
+        height: inherit;
+    }
+    &__nav{
+        height: inherit;
+    }
+    &__logo, .footer-page__logo{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $active-color;
+        text-decoration: none;
+    }
+    &__logo--black{
+        color: $main-color;
+    }
 }
 .pages{
-    @extend %flex;
-    justify-content: space-between;
+    @include flex(space-between);
     width: 290px;
     margin-left: 93px;
     height: inherit;
+    &__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $main-color;
+        text-decoration: none;
+        @include flex;
+        transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
+        position: relative;
+        height: 100%;
+        &:hover{
+            color: $active-color;
+        }
+    }
+    &__overlay::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        transform: translateY(39px);
+        background-color: $active-color;
+        border-radius: 5px;
+        transition: all ease-in 0.2s;
+    }
 }
 .contacts{
-    @extend %flex;
-    justify-content: space-between;
+    @include flex(space-between);
     width: 333px;
     margin-left: auto;
-}
-.header-page__logo, .footer-page__logo{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $active-color;
-    text-decoration: none;
-}
-.pages__link, .contacts__link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: $main-color;
-    text-decoration: none;
-    @extend %flex;
-    transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
-    position: relative;
-    height: 100%;
-}
-.pages__link:hover, .contacts__link:hover{
-    color: $active-color;
-}
-.pages__overlay::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    transform: translateY(39px);
-    background-color: $active-color;
-    border-radius: 5px;
-    transition: all ease-in 0.2s;
-}
-.contacts__link:hover>svg{
-    fill: $active-color;
-    transform: rotate(360deg);
-}
-.contacts__svg{
-    fill: $submain-color;
-    margin-right: 10px;
-    transition: all ease-out 0.2s;
-}
-.header-page__logo--black{
-    color: $main-color;
-}
-.contacts__link{
-    color: $submain-color;
-}
-.contacts__link:hover{
-    transform: translateY(-5px) skew(-10deg);
+    &__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $submain-color;
+        text-decoration: none;
+        @include flex;
+        transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
+        position: relative;
+        height: 100%;
+        &:hover{
+            color: $active-color;
+            transform: translateY(-5px) skew(-10deg);
+        }
+        &:hover>svg{
+            fill: $active-color;
+            transform: rotate(360deg);
+        }
+    }
+    &__svg{
+        fill: $submain-color;
+        margin-right: 10px;
+        transition: all ease-out 0.2s;
+    }
 }
