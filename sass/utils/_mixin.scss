@@ -7,3 +7,12 @@
     width: $width;
     height: $height;
 }
+@mixin text-style($font-weight, $font-size, $line-height, $text-align, $letter-spacing, $color, $font-family: 'Roboto'){
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: $text-align;
+    letter-spacing: $letter-spacing;
+    color: $color;
+    font-family: $font-family;
+}

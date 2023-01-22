@@ -1,6 +1,6 @@
 /* header */
 .header-page{
-    height: 80px;
+    @include size-of-box(auto, 80px);
     &__container{
         @include flex;
         height: inherit;
@@ -11,16 +11,11 @@
 }
 .pages{
     @include flex(space-between);
-    width: 290px;
+    @include size-of-box(290px, auto);
     margin-left: 93px;
     height: inherit;
     &__link{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: $main-color;
-        text-decoration: none;
+        @include text-style(500, 14px, 1.17, auto, 0.02em, $main-color);
         @include flex;
         transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
         position: relative;
@@ -32,7 +27,7 @@
     &__overlay::after{
         content: '';
         display: block;
-        width: 100%;
+        @include size-of-box(100%, auto);
         height: 3px;
         position: absolute;
         transform: translateY(39px);
@@ -43,19 +38,14 @@
 }
 .contacts{
     @include flex(space-between);
-    width: 333px;
+    @include size-of-box(333px, auto);
     margin-left: auto;
     &__link{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: $submain-color;
-        text-decoration: none;
+        @include text-style(500, 14px, 1.17, auto, 0.02em, $submain-color);
         @include flex;
         transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
         position: relative;
-        height: 100%;
+        @include size-of-box(auto, 100%);
         &:hover{
             color: $active-color;
             transform: translateY(-5px) skew(-10deg);

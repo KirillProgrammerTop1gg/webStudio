@@ -3,7 +3,7 @@
     padding: 60px 0;
     background-color: $footer-background-color;
     &__container{
-        width: 1200px;
+        @include size-of-box(1200px, auto);
         padding: 0 15px;
         margin: 0 auto;
         display: flex;
@@ -17,13 +17,8 @@
         padding-top: 12px;
     }
     &__title{
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
+        @include text-style(700, 14px, 1.14, auto, 0.03em, $footer-color);
         text-transform: uppercase;
-        color: $footer-color;
     }
 }
 .contact-information{
@@ -35,28 +30,21 @@
         }
     }
     &__adress{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;    
-        letter-spacing: 0.03em;
+        @include text-style(400, 14px, 1.71, auto, 0.03em, $footer-color);
         color: $footer-color;
     }
     &__contact{
-        font-weight: 400;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
+        @include text-style(400, 14px, 1.71, auto, 0.03em, rgba(255, 255, 255, 0.6));
         justify-content: start;
     }
 }
 .socials{
     margin-top: 20px;
     @include flex(space-between);
-    width: 206px;
+    @include size-of-box(206px, auto);
     &__item{
-        width: 44px;
+        @include size-of-box(44px, 44px);
         border-radius: 50%;
-        height: 44px;
         @include flex;
         background: $socials-item-background-color;
         transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
@@ -72,40 +60,25 @@
 }
 .footer-form{
     @include flex(space-between);
-    width: 570px;
+    @include size-of-box(570px, auto);
     margin-top: 20px;
     &__but{
         @include flex;
-        width: 200px;
-        height: 50px;
+        @include size-of-box(200px, 50px);
+        @include text-style(700, 16px, 1.88, center, 0.06em, $footer-color);
         background: $active-color;
         box-shadow: $footer-button-shadow;
         border-radius: 5px;
         border: 0;
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-        color: $footer-color;
     }
     &__field{
-        width: 358px;
-        height: 50px;
+        @include size-of-box(358px, 50px);
+        @include text-style(400, 16px, 1.25, auto, 0.03em, $footer-link-color);
         border: $normal-styles-border $footer-link-border;
         filter: drop-shadow($footer-button-shadow);
         border-radius: 4px;
         background-color: transparent;
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
         padding: 15px 16px;
-        letter-spacing: 0.03em;
-        color: $footer-link-color;
         transition: all ease 0.2s;
         &:hover{
             border-color: $active-color;

@@ -30,21 +30,13 @@
         }
     }
     &__title{
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
+        @include text-style(700, 14px, 1.14, auto, 0.03em, $main-color);
+        @include size-of-box(270px, auto);
         text-transform: uppercase;
-        color: $main-color;
-        width: 270px;
     }
     &__text{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $submain-color;
-        width: 270px;
+        @include text-style(400, 14px, 1.71, auto, 0.03em, $submain-color);
+        @include size-of-box(270px, auto);
         margin-top: 10px;
     }
 }

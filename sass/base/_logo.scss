@@ -1,11 +1,5 @@
 .main-logo{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $active-color;
-    text-decoration: none;
+    @include text-style(700, 26px, 1.19, auto, 0.03em, $active-color, 'Raleway');
     &--white{
         color: $main-title-color;
     }

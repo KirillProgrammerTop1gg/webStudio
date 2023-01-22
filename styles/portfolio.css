@@ -3,14 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-style: normal;
+  text-decoration: none;
 }
 
 ul {
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 textarea {
@@ -23,6 +20,7 @@ body {
 
 .container {
   width: 1200px;
+  height: auto;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -34,16 +32,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  font-family: "Roboto";
 }
 
 .main-logo {
-  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-align: auto;
   letter-spacing: 0.03em;
   color: #2196F3;
-  text-decoration: none;
+  font-family: "Raleway";
 }
 .main-logo--white {
   color: #FFF;
@@ -54,6 +53,7 @@ body {
 
 /* header */
 .header-page {
+  width: auto;
   height: 80px;
 }
 .header-page__container {
@@ -71,6 +71,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 290px;
+  height: auto;
   margin-left: 93px;
   height: inherit;
 }
@@ -78,9 +79,10 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
+  text-align: auto;
   letter-spacing: 0.02em;
   color: #212121;
-  text-decoration: none;
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,6 +97,7 @@ body {
   content: "";
   display: block;
   width: 100%;
+  height: auto;
   height: 3px;
   position: absolute;
   transform: translateY(39px);
@@ -108,20 +111,23 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 333px;
+  height: auto;
   margin-left: auto;
 }
 .contacts__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
+  text-align: auto;
   letter-spacing: 0.02em;
   color: #757575;
-  text-decoration: none;
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   position: relative;
+  width: auto;
   height: 100%;
 }
 .contacts__link:hover {
@@ -150,6 +156,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   width: 611px;
+  height: auto;
 }
 .filter__but {
   font-weight: 500;
@@ -158,6 +165,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  font-family: auto;
   background: #F5F4FA;
   border: 0;
   border-radius: 4px;
@@ -204,15 +212,19 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  text-align: auto;
   letter-spacing: 0.06em;
   color: #212121;
+  font-family: auto;
 }
 .projects__category {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+  text-align: auto;
   letter-spacing: 0.03em;
   color: #757575;
+  font-family: auto;
   margin-top: 4px;
 }
 .projects__overlay {
@@ -220,12 +232,13 @@ body {
   background: rgba(33, 150, 243, 0.9);
   width: 370px;
   height: 294px;
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
+  text-align: auto;
   letter-spacing: 0.03em;
   color: #FFF;
+  font-family: "Roboto";
   top: 0;
   padding: 63px 24px;
   opacity: 0;
@@ -240,6 +253,7 @@ body {
 }
 .footer-page__container {
   width: 1200px;
+  height: auto;
   padding: 0 15px;
   margin: 0 auto;
   display: flex;
@@ -253,13 +267,14 @@ body {
   padding-top: 12px;
 }
 .footer-page__title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: auto;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #FFF;
+  font-family: "Roboto";
+  text-transform: uppercase;
 }
 
 .contact-information {
@@ -275,14 +290,20 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: auto;
   letter-spacing: 0.03em;
+  color: #FFF;
+  font-family: "Roboto";
   color: #FFF;
 }
 .contact-information__contact {
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
+  text-align: auto;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
   justify-content: start;
 }
 
@@ -292,11 +313,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 206px;
+  height: auto;
 }
 .socials__item {
   width: 44px;
-  border-radius: 50%;
   height: 44px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,6 +339,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 570px;
+  height: auto;
   margin-top: 20px;
 }
 .footer-form__but {
@@ -325,34 +348,33 @@ body {
   justify-content: center;
   width: 200px;
   height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFF;
+  font-family: "Roboto";
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   border: 0;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #FFF;
 }
 .footer-form__field {
   width: 358px;
   height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: auto;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   padding: 15px 16px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
   transition: all ease 0.2s;
 }
 .footer-form__field:hover {

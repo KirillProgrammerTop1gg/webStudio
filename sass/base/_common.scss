@@ -3,16 +3,11 @@ body{
 }
 
 .container{
-    width: 1200px;
+    @include size-of-box(1200px, auto);
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .section-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $main-color;
+    @include text-style(700, 36px, 1.16, center, 0.03em, $main-color);
 }

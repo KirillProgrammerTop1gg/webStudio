@@ -8,13 +8,8 @@
 }
 .services-section__item{
     position: relative;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    @extend %textAlingLet;
+    @include text-style(700, 14px, 1.14, center, 0.03em, $services-overlay-text-color);
     text-transform: uppercase;
-    color: $services-overlay-text-color;
     &::before{
         content: 'Десктопні додатки';
         @include flex;

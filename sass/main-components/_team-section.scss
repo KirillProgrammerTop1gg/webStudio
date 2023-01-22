@@ -13,19 +13,11 @@
         padding-bottom: 30px;
     }
     &__name{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;    
-        @extend %textAlingLet;
-        color: $main-color;
+        @include text-style(500, 16px, 1.18, center, 0.03em, $main-color);
         margin-top: 30px;
     }
     &__pos{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.18;    
-        @extend %textAlingLet;
-        color: $submain-color;
+        @include text-style(400, 16px, 1.18, center, 0.03em, $submain-color);
         margin-top: 10px;
     }
     &__socials{
