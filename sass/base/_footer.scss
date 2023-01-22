@@ -76,7 +76,7 @@
         @include text-style(400, 16px, 1.25, auto, 0.03em, $footer-link-color);
         border: $normal-styles-border $footer-link-border;
         filter: drop-shadow($footer-button-shadow);
-        border-radius: 4px;
+        @extend normal-border-radius;
         background-color: transparent;
         padding: 15px 16px;
         transition: all ease 0.2s;
