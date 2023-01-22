@@ -36,6 +36,22 @@ body {
   color: #212121;
 }
 
+.main-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+  text-decoration: none;
+}
+.main-logo--white {
+  color: #FFF;
+}
+.main-logo--black {
+  color: #212121;
+}
+
 /* header */
 .header-page {
   height: 80px;
@@ -48,18 +64,6 @@ body {
 }
 .header-page__nav {
   height: inherit;
-}
-.header-page__logo, .header-page .footer-page__logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-  text-decoration: none;
-}
-.header-page__logo--black {
-  color: #212121;
 }
 
 .pages {
@@ -234,9 +238,6 @@ body {
   padding: 60px 0;
   background-color: #2F303A;
 }
-.footer-page__logo--white {
-  color: #FFF;
-}
 .footer-page__container {
   width: 1200px;
   padding: 0 15px;
@@ -282,13 +283,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  justify-content: start;
 }
 
 .socials {
   margin-top: 20px;
   display: flex;
-  width: 206px;
+  align-items: center;
   justify-content: space-between;
+  width: 206px;
 }
 .socials__item {
   width: 44px;

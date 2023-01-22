@@ -8,18 +8,6 @@
     &__nav{
         height: inherit;
     }
-    &__logo, .footer-page__logo{
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: $active-color;
-        text-decoration: none;
-    }
-    &__logo--black{
-        color: $main-color;
-    }
 }
 .pages{
     @include flex(space-between);

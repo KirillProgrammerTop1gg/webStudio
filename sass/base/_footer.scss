@@ -2,9 +2,6 @@
 .footer-page{
     padding: 60px 0;
     background-color: $footer-background-color;
-    &__logo--white{
-        color: $footer-color;
-    }
     &__container{
         width: 1200px;
         padding: 0 15px;
@@ -49,13 +46,13 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+        justify-content: start;
     }
 }
 .socials{
     margin-top: 20px;
-    display: flex;
+    @include flex(space-between);
     width: 206px;
-    justify-content: space-between;
     &__item{
         width: 44px;
         border-radius: 50%;
