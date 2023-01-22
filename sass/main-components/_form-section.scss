@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
     background: $form-background-color;
     box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
-    border-radius: 4px;
+    @extend normal-border-radius;
     &__title{
         @include text-style(700, 20px, 1.15, center, 0.03em, $main-color);
     }
@@ -45,7 +45,7 @@
     }
     &__field, &__textarea{
         border: $normal-styles-border $form-field-border;
-        border-radius: 4px;
+        @extend normal-border-radius;
         cursor: pointer;
         margin-top: 4px;
         transition: all ease 0.2s;
@@ -88,7 +88,7 @@
         height: 50px;
         background: $active-color;
         box-shadow: $form-boxshadow;
-        border-radius: 4px;
+        @extend normal-border-radius;
         border: 0;
         display: block;
         margin: 30px auto 0;

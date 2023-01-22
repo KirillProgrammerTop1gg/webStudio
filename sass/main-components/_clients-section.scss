@@ -1,6 +1,6 @@
 /* section clients */
 .clients-section{
-    padding: 94px 0;
+    @extend section-padding;
     &__list{
         margin-top: 50px;
         @include flex(space-between);
@@ -14,7 +14,7 @@
         @include size-of-box(170px, 90px);
         @include flex;
         border: $normal-styles-border $clients-section-item-border-color;
-        border-radius: 4px;
+        @extend normal-border-radius;
         transition: all ease-in-out 0.2s;
         &:hover{
             border: $normal-styles-border $active-color;

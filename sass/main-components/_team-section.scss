@@ -1,7 +1,7 @@
 /* section team */
 .team-section{
     background-color: $team-section-background-color;
-    padding: 94px 0;
+    @extend section-padding;
 }
 .workers{
     @include flex(space-between);

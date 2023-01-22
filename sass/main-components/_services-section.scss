@@ -1,6 +1,6 @@
 /* section services */
 .services-section{
-    padding: 94px 0;
+    @extend section-padding;
     &__list{
         @include flex(space-between);
         margin-top: 50px;
