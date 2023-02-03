@@ -25,7 +25,9 @@
             }
         }
         @media screen and (min-width: 1170px) {
-            margin-top: 0;
+            &:nth-child(n+4){
+                margin-top: 0;
+            }
             @include size-of-box(170px, 90px);
         }
         @include flex;

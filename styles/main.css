@@ -327,7 +327,7 @@ body {
   }
 }
 @media screen and (min-width: 1170px) {
-  .benefits-section__item {
+  .benefits-section__item:nth-child(n+4) {
     margin-top: 0;
   }
 }
@@ -446,9 +446,11 @@ body {
 }
 @media screen and (min-width: 1170px) {
   .workers__worker {
-    margin-top: 0;
     width: 270px;
     height: auto;
+  }
+  .workers__worker:nth-child(n+4) {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -555,9 +557,11 @@ body {
 }
 @media screen and (min-width: 1170px) {
   .clients-section__item {
-    margin-top: 0;
     width: 170px;
     height: 90px;
+  }
+  .clients-section__item:nth-child(n+4) {
+    margin-top: 0;
   }
 }
 .clients-section__item:hover {
