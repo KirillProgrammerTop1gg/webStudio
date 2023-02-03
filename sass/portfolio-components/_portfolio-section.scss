@@ -8,7 +8,7 @@
     margin: 0 auto;
     @include size-of-box(611px, auto);
     &__but{
-        @include text-style(500, 16px, 1.61, center, 0.03em, $main-color, auto);
+        @include text-style(500, 16px, 1.61, center, 0.03em, $main-color, 'Roboto');
         background: $button-filter-background-color;
         border: 0;
         border-radius: 4px;
@@ -50,10 +50,10 @@
         padding: 0 24px;
     }
     &__name{
-        @include text-style(700, 18px, 2, auto, 0.06em, $main-color, auto);
+        @include text-style(700, 18px, 2, auto, 0.06em, $main-color, 'Roboto');
     }
     &__category{
-        @include text-style(400, 16px, 1.88, auto, 0.03em, $submain-color, auto);
+        @include text-style(400, 16px, 1.88, auto, 0.03em, $submain-color, 'Roboto');
         margin-top: 4px;
     }
     &__overlay{

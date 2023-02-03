@@ -1,3 +1,7 @@
+.footer-form__field {
+  border-radius: 4px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,8 +23,7 @@ body {
 }
 
 .container {
-  width: 1200px;
-  height: auto;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -44,6 +47,18 @@ body {
   color: #2196F3;
   font-family: "Raleway";
 }
+@media screen and (min-width: 768px) {
+  .main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .main-logo {
+    display: block;
+  }
+}
 .main-logo--white {
   color: #FFF;
 }
@@ -63,6 +78,9 @@ body {
   height: inherit;
 }
 .header-page__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: inherit;
 }
 
@@ -70,10 +88,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 290px;
-  height: auto;
-  margin-left: 93px;
   height: inherit;
+}
+@media screen and (min-width: 768px) {
+  .pages {
+    width: 289.93px;
+    height: auto;
+    margin-left: 87.8px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .pages {
+    width: 290px;
+    height: auto;
+    margin-left: 93px;
+  }
 }
 .pages__link {
   font-weight: 500;
@@ -110,9 +139,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 333px;
-  height: auto;
+  flex-wrap: wrap;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    width: 136.44px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .contacts {
+    width: 333px;
+    height: auto;
+  }
 }
 .contacts__link {
   font-weight: 500;
@@ -129,6 +169,21 @@ body {
   position: relative;
   width: auto;
   height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    font-size: 11.5px;
+    margin-top: 12px;
+  }
+  .contacts__link:first-child {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .contacts__link {
+    font-size: 14px;
+    margin-top: 0;
+  }
 }
 .contacts__link:hover {
   color: #2196F3;
@@ -165,7 +220,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  font-family: auto;
+  font-family: "Roboto";
   background: #F5F4FA;
   border: 0;
   border-radius: 4px;
@@ -215,7 +270,7 @@ body {
   text-align: auto;
   letter-spacing: 0.06em;
   color: #212121;
-  font-family: auto;
+  font-family: "Roboto";
 }
 .projects__category {
   font-weight: 400;
@@ -224,7 +279,7 @@ body {
   text-align: auto;
   letter-spacing: 0.03em;
   color: #757575;
-  font-family: auto;
+  font-family: "Roboto";
   margin-top: 4px;
 }
 .projects__overlay {
@@ -252,19 +307,55 @@ body {
   background-color: #2F303A;
 }
 .footer-page__container {
-  width: 1200px;
-  height: auto;
-  padding: 0 15px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-page__container {
+    flex-wrap: wrap;
+    width: 768px;
+    height: auto;
+    padding: 0 89px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer-page__container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 0 15px;
+    width: 1200px;
+    height: auto;
+  }
 }
 .footer-page__column--2 {
   margin-left: 70px;
-  padding-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer-page__column--2 {
+    margin-top: -42px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer-page__column--2 {
+    margin-top: 0;
+    padding-top: 12px;
+  }
 }
 .footer-page__column--3 {
   margin-left: 93px;
   padding-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer-page__column--3 {
+    padding-top: 66px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer-page__column--3 {
+    padding-top: 12px;
+  }
 }
 .footer-page__title {
   font-weight: 700;
@@ -275,6 +366,18 @@ body {
   color: #FFF;
   font-family: "Roboto";
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .footer-page__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer-page__title {
+    display: block;
+  }
 }
 
 .contact-information {
@@ -290,21 +393,45 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  text-align: auto;
+  text-align: start;
   letter-spacing: 0.03em;
   color: #FFF;
   font-family: "Roboto";
   color: #FFF;
 }
+@media screen and (min-width: 768px) {
+  .contact-information__adress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .contact-information__adress {
+    display: block;
+  }
+}
 .contact-information__contact {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  text-align: auto;
+  text-align: start;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
   justify-content: start;
+}
+@media screen and (min-width: 768px) {
+  .contact-information__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .contact-information__contact {
+    display: block;
+  }
 }
 
 .socials {
@@ -342,6 +469,16 @@ body {
   height: auto;
   margin-top: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer-form {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer-form {
+    flex-direction: row;
+  }
+}
 .footer-form__but {
   display: flex;
   align-items: center;
@@ -360,9 +497,17 @@ body {
   border-radius: 5px;
   border: 0;
 }
+@media screen and (min-width: 768px) {
+  .footer-form__but {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer-form__but {
+    margin-top: 0;
+  }
+}
 .footer-form__field {
-  width: 358px;
-  height: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -372,10 +517,21 @@ body {
   font-family: "Roboto";
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
   background-color: transparent;
   padding: 15px 16px;
   transition: all ease 0.2s;
+}
+@media screen and (min-width: 768px) {
+  .footer-form__field {
+    width: 450px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer-form__field {
+    width: 358px;
+    height: 50px;
+  }
 }
 .footer-form__field:hover {
   border-color: #2196F3;

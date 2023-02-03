@@ -2,11 +2,25 @@
 .hero-section{
     @include flex;
     flex-direction: column;
-    @include size-of-box(auto, 600px);
+    @media screen and (min-width: 768px) {
+        @include size-of-box(auto, 400px);
+    }
+    @media screen and (min-width: 1170px) {
+        @include size-of-box(auto, 600px);
+    }
     background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/fon.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     &__title{
-        @include text-style(900, 44px, 1.36, center, 00.06em, $main-title-color);
-        @include size-of-box(696px, auto);
+        @media screen and (min-width: 768px) {
+            @include size-of-box(307px, auto);
+            @include text-style(900, 25px, 1.36, center, 00.06em, $main-title-color);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(696px, auto);
+            font-size: 44px;
+        }
         text-transform: uppercase;
     }
     &__but{
@@ -14,7 +28,7 @@
         background-color: $background-hero-button-color;
         border: 0;
         box-shadow: 0px 4px 4px $shadow-hero-button-color;
-        @extend normal-border-radius;
+        @extend %normal-border-radius;
         @include size-of-box(200px, 50px);
         margin-top: 30px;
     }

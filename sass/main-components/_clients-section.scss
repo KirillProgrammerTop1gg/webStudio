@@ -1,20 +1,36 @@
 /* section clients */
 .clients-section{
-    @extend section-padding;
+    @extend %section-padding;
     &__list{
         margin-top: 50px;
         @include flex(space-between);
-        @include size-of-box(1170px, auto);
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            @include size-of-box(738px, auto);
+        }
+        @media screen and (min-width: 1170px) {
+            flex-wrap: nowrap;
+            @include size-of-box(1170px, auto);
+        }
     }
     &__svg{
         fill: $normal-svg-color;
         transition: all ease-out 0.2s;
     }
     &__item{
-        @include size-of-box(170px, 90px);
+        @media screen and (min-width: 768px) {
+            @include size-of-box(226px, 90px);
+            &:nth-child(n+4){
+                margin-top: 30px;
+            }
+        }
+        @media screen and (min-width: 1170px) {
+            margin-top: 0;
+            @include size-of-box(170px, 90px);
+        }
         @include flex;
         border: $normal-styles-border $clients-section-item-border-color;
-        @extend normal-border-radius;
+        @extend %normal-border-radius;
         transition: all ease-in-out 0.2s;
         &:hover{
             border: $normal-styles-border $active-color;

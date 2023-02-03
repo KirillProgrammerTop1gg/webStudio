@@ -1,5 +1,11 @@
 .main-logo{
     @include text-style(700, 26px, 1.19, auto, 0.03em, $active-color, 'Raleway');
+    @media screen and (min-width: 768px) {
+        @include flex;
+    }
+    @media screen and (min-width: 1170px) {
+        display: block;
+    }
     &--white{
         color: $main-title-color;
     }

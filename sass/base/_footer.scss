@@ -3,22 +3,49 @@
     padding: 60px 0;
     background-color: $footer-background-color;
     &__container{
-        @include size-of-box(1200px, auto);
-        padding: 0 15px;
         margin: 0 auto;
-        display: flex;
+        @include flex;
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            @include size-of-box(768px, auto);
+            padding: 0 89px;
+        }
+        @media screen and (min-width: 1170px) {
+            flex-wrap: wrap;
+            margin-top: 0;
+            padding: 0 15px;
+            @include size-of-box(1200px, auto);
+        }
     }
     &__column--2{
         margin-left: 70px;
-        padding-top: 12px;
+        @media screen and (min-width: 768px) {
+            margin-top: -42px;
+        }
+        @media screen and (min-width: 1170px) {
+            margin-top: 0;
+            padding-top: 12px;
+        }
     }
     &__column--3{
         margin-left: 93px;
         padding-top: 12px;
+        @media screen and (min-width: 768px) {
+            padding-top: 66px;
+        }
+        @media screen and (min-width: 1170px) {
+            padding-top: 12px;
+        }
     }
     &__title{
         @include text-style(700, 14px, 1.14, auto, 0.03em, $footer-color);
         text-transform: uppercase;
+        @media screen and (min-width: 768px) {
+            @include flex;
+        }
+        @media screen and (min-width: 1170px) {
+            display: block;
+        }
     }
 }
 .contact-information{
@@ -30,12 +57,24 @@
         }
     }
     &__adress{
-        @include text-style(400, 14px, 1.71, auto, 0.03em, $footer-color);
+        @include text-style(400, 14px, 1.71, start, 0.03em, $footer-color);
         color: $footer-color;
+        @media screen and (min-width: 768px) {
+            @include flex;
+        }
+        @media screen and (min-width: 1170px) {
+            display: block;
+        }
     }
     &__contact{
-        @include text-style(400, 14px, 1.71, auto, 0.03em, rgba(255, 255, 255, 0.6));
+        @include text-style(400, 14px, 1.71, start, 0.03em, rgba(255, 255, 255, 0.6));
         justify-content: start;
+        @media screen and (min-width: 768px) {
+            @include flex;
+        }
+        @media screen and (min-width: 1170px) {
+            display: block;
+        }
     }
 }
 .socials{
@@ -62,6 +101,12 @@
     @include flex(space-between);
     @include size-of-box(570px, auto);
     margin-top: 20px;
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1170px) {
+        flex-direction: row;
+    }
     &__but{
         @include flex;
         @include size-of-box(200px, 50px);
@@ -70,16 +115,27 @@
         box-shadow: $footer-button-shadow;
         border-radius: 5px;
         border: 0;
+        @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
+        @media screen and (min-width: 1170px) {
+            margin-top: 0;
+        }
     }
     &__field{
-        @include size-of-box(358px, 50px);
         @include text-style(400, 16px, 1.25, auto, 0.03em, $footer-link-color);
         border: $normal-styles-border $footer-link-border;
         filter: drop-shadow($footer-button-shadow);
-        @extend normal-border-radius;
+        @extend %normal-border-radius;
         background-color: transparent;
         padding: 15px 16px;
         transition: all ease 0.2s;
+        @media screen and (min-width: 768px) {
+            @include size-of-box(450px, 50px);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(358px, 50px);
+        }
         &:hover{
             border-color: $active-color;
         }

@@ -1,9 +1,15 @@
 /* section services */
 .services-section{
-    @extend section-padding;
+    @extend %section-padding;
     &__list{
         @include flex(space-between);
         margin-top: 50px;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (min-width: 1170px) {
+        display: block;
     }
 }
 .services-section__item{

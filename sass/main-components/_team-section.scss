@@ -1,16 +1,42 @@
 /* section team */
 .team-section{
     background-color: $team-section-background-color;
-    @extend section-padding;
+    @extend %section-padding;
 }
 .workers{
     @include flex(space-between);
     margin-top: 50px;
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        @include size-of-box(738px, auto);
+    }
+    @media screen and (min-width: 1170px) {
+        flex-wrap: nowrap;
+        @include size-of-box(auto, auto);
+    }
     &__worker{
         background: $worker-background-color;
         box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
         border-radius: 0px 0px 4px 4px;
         padding-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            @include size-of-box(354px, auto);
+            &:nth-child(n+3){
+                margin-top: 30px;
+            }
+        }
+        @media screen and (min-width: 1170px) {
+            margin-top: 0;
+            @include size-of-box(270px, auto);
+        }
+    }
+    &__photo{
+        @media screen and (min-width: 768px) {
+            @include size-of-box(354px, auto);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(270px, auto);
+        }
     }
     &__name{
         @include text-style(500, 16px, 1.18, center, 0.03em, $main-color);
