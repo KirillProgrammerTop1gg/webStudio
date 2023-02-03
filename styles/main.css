@@ -278,6 +278,7 @@ body {
     justify-content: space-between;
     width: 738px;
     height: auto;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -418,6 +419,7 @@ body {
     flex-wrap: wrap;
     width: 738px;
     height: auto;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -512,7 +514,6 @@ body {
 
 /* section clients */
 .clients-section__list {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -522,6 +523,7 @@ body {
     flex-wrap: wrap;
     width: 738px;
     height: auto;
+    margin: 50px auto 0;
   }
 }
 @media screen and (min-width: 1170px) {

@@ -6,6 +6,7 @@
             flex-wrap: wrap;
             @include flex(space-between);
             @include size-of-box(738px, auto);
+            margin: 0 auto;
         }
         @media screen and (min-width: 1170px) {
             flex-wrap: nowrap;
