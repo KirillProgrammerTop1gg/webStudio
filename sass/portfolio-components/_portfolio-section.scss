@@ -6,7 +6,12 @@
 .filter{
     @include flex(space-between);
     margin: 0 auto;
-    @include size-of-box(611px, auto);
+    @media screen and (min-width: 768px) {
+        @include size-of-box(575px, auto);
+    }
+    @media screen and (min-width: 1170px) {
+        @include size-of-box(611px, auto);
+    }
     &__but{
         @include text-style(500, 16px, 1.61, center, 0.03em, $main-color, 'Roboto');
         background: $button-filter-background-color;
@@ -33,8 +38,15 @@
         margin-top: 0;
         position: relative;
         transition: all ease-out 0.2s;
-        &:nth-child(n+4){
-            margin-top: 30px;
+        @media screen and (min-width: 768px) {
+            &:nth-child(n+3){
+                margin-top: 30px;
+            }
+        }
+        @media screen and (min-width: 1170px) {
+            &:nth-child(n+4){
+                margin-top: 30px;
+            }
         }
         &:hover>.projects__overlay{
             opacity: 1;
@@ -43,6 +55,14 @@
         &:hover{
             box-shadow: $project_boxshadow;
             transform: scale(1.1);
+        }
+    }
+    &__img{
+        @media screen and (min-width: 768px) {
+            @include size-of-box(354px, 294px);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(370px, 294px);
         }
     }
     &__texts{
@@ -59,7 +79,12 @@
     &__overlay{
         position: absolute;
         background: $project-overlay-background-color;
-        @include size-of-box(370px, 294px);
+        @media screen and (min-width: 768px) {
+            @include size-of-box(354px, 294px);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(370px, 294px);
+        }
         @include text-style(400, 18px, 1.56, auto, 0.03em, $portfolio-color, 'Roboto');
         top: 0;
         padding: 63px 24px;

@@ -15,7 +15,7 @@
     &__title{
         @media screen and (min-width: 768px) {
             @include size-of-box(307px, auto);
-            @include text-style(900, 25px, 1.36, center, 00.06em, $main-title-color);
+            @include text-style(900, 26px, 1.36, center, 00.06em, $main-title-color);
         }
         @media screen and (min-width: 1170px) {
             @include size-of-box(696px, auto);
