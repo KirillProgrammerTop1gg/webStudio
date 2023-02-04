@@ -214,10 +214,17 @@ body {
 }
 
 .filter {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .filter {
+    width: 326px;
+    height: auto;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -229,6 +236,16 @@ body {
   .filter {
     width: 611px;
     height: auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .filter__item:nth-child(n+4) {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter__item:nth-child(n) {
+    margin-top: 0;
   }
 }
 .filter__but {
@@ -257,7 +274,25 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 50px;
+}
+@media screen and (min-width: 480px) {
+  .projects {
+    width: 450px;
+    height: auto;
+    margin: 50px auto 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    width: 738px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .projects {
+    width: auto;
+    height: auto;
+  }
 }
 .projects__item {
   border: 1px solid #EEEEEE;
@@ -266,12 +301,23 @@ body {
   position: relative;
   transition: all ease-out 0.2s;
 }
+@media screen and (min-width: 480px) {
+  .projects__item:nth-child(n+2) {
+    margin-top: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .projects__item:nth-child(n) {
+    margin-top: 0;
+  }
   .projects__item:nth-child(n+3) {
     margin-top: 30px;
   }
 }
 @media screen and (min-width: 1170px) {
+  .projects__item:nth-child(n) {
+    margin-top: 0;
+  }
   .projects__item:nth-child(n+4) {
     margin-top: 30px;
   }
@@ -283,6 +329,12 @@ body {
 .projects__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: scale(1.1);
+}
+@media screen and (min-width: 480px) {
+  .projects__img {
+    width: 450px;
+    height: 294px;
+  }
 }
 @media screen and (min-width: 768px) {
   .projects__img {
@@ -334,6 +386,12 @@ body {
   opacity: 0;
   transition: all cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.3s;
   transform: translateY(50px) scale(1.1) rotate(10deg);
+}
+@media screen and (min-width: 480px) {
+  .projects__overlay {
+    width: 450px;
+    height: 294px;
+  }
 }
 @media screen and (min-width: 768px) {
   .projects__overlay {
