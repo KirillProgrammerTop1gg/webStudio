@@ -650,6 +650,9 @@ body {
   .clients-section__item:nth-child(n+3) {
     margin-top: 30px;
   }
+  .clients-section__item:hover {
+    transform: skew(-15deg, 10deg);
+  }
 }
 @media screen and (min-width: 768px) {
   .clients-section__item {
@@ -671,10 +674,9 @@ body {
   .clients-section__item:nth-child(n) {
     margin-top: 0;
   }
-}
-.clients-section__item:hover {
-  border: 1px solid #2196F3;
-  transform: skew(-25deg, 10deg);
+  .clients-section__item:hover {
+    transform: skew(-25deg, 10deg);
+  }
 }
 .clients-section__item:hover > svg {
   fill: #2196F3;

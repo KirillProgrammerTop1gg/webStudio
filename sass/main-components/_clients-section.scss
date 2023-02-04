@@ -26,6 +26,9 @@
             &:nth-child(n+3){
                 margin-top: 30px;
             }
+            &:hover{
+                transform: skew(-15deg, 10deg);
+            }
         }
         @media screen and (min-width: 768px) {
             @include size-of-box(226px, 90px);
@@ -41,15 +44,14 @@
                 margin-top: 0;
             }
             @include size-of-box(170px, 90px);
+            &:hover{
+                transform: skew(-25deg, 10deg);
+            }
         }
         @include flex;
         border: $normal-styles-border $clients-section-item-border-color;
         @extend %normal-border-radius;
         transition: all ease-in-out 0.2s;
-        &:hover{
-            border: $normal-styles-border $active-color;
-            transform: skew(-25deg, 10deg);
-        }
         &:hover > svg{
             fill: $active-color;
             transform: translate(30px, 10px);
