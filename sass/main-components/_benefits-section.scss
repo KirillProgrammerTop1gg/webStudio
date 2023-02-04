@@ -73,12 +73,14 @@
         }
     }
     &__title{
-        @include text-style(700, 14px, 1.14, auto, 0.03em, $main-color);
+        @include text-style(700, 14px, 1.14, start, 0.03em, $main-color);
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, auto);
+            text-align: center;
         }
         @media screen and (min-width: 768px) {
             @include size-of-box(270px, auto);
+            text-align: start;
         }
         text-transform: uppercase;
     }

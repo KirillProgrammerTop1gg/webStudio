@@ -370,7 +370,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: auto;
+  text-align: start;
   letter-spacing: 0.03em;
   color: #212121;
   font-family: "Roboto";
@@ -380,12 +380,14 @@ body {
   .benefits-section__title {
     width: 450px;
     height: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits-section__title {
     width: 270px;
     height: auto;
+    text-align: start;
   }
 }
 .benefits-section__text {
