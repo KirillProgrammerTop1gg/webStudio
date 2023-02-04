@@ -1,7 +1,7 @@
 /* form section */
 .form-section{
     padding: 40px;
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 480px) {
         @include size-of-box(450px, 609px);
     }
     @media screen and (min-width: 1170px) {

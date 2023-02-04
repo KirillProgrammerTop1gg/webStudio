@@ -12,12 +12,14 @@
 }
 .pages{
     @include flex(space-between);
+    @media screen and (min-width: 480px) {
+        @include size-of-box(290px, auto);
+        margin-left: 30px;
+    }
     @media screen and (min-width: 768px) {
-        @include size-of-box(289.93px, auto);
         margin-left: 87.8px;
     }
     @media screen and (min-width: 1170px) {
-        @include size-of-box(290px, auto);
         margin-left: 93px;
     }
     height: inherit;
@@ -44,10 +46,13 @@
     }
 }
 .contacts{
-    @include flex(space-between);
-    flex-wrap: wrap;
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
     @media screen and (min-width: 768px) {
         @include size-of-box(136.44px, auto);
+        @include flex(space-between);
+        flex-wrap: wrap;
     }
     @media screen and (min-width: 1170px) {
         @include size-of-box(333px, auto);
@@ -55,7 +60,7 @@
     margin-left: auto;
     &__link{
         @include text-style(500, 14px, 1.17, auto, 0.02em, $submain-color);
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             font-size: 11.5px;
             margin-top: 12px;
             &:first-child{

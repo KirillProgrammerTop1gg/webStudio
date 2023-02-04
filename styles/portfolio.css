@@ -47,7 +47,7 @@ body {
   color: #2196F3;
   font-family: "Raleway";
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .main-logo {
     display: flex;
     align-items: center;
@@ -90,17 +90,20 @@ body {
   justify-content: space-between;
   height: inherit;
 }
+@media screen and (min-width: 480px) {
+  .pages {
+    width: 290px;
+    height: auto;
+    margin-left: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .pages {
-    width: 289.93px;
-    height: auto;
     margin-left: 87.8px;
   }
 }
 @media screen and (min-width: 1170px) {
   .pages {
-    width: 290px;
-    height: auto;
     margin-left: 93px;
   }
 }
@@ -136,16 +139,21 @@ body {
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .contacts {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts {
     width: 136.44px;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -170,7 +178,7 @@ body {
   width: auto;
   height: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .contacts__link {
     font-size: 11.5px;
     margin-top: 12px;
@@ -351,8 +359,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 480px) {
+  .footer-page__container {
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    padding: 0 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-page__container {
+    flex-direction: row;
     flex-wrap: wrap;
     width: 768px;
     height: auto;
@@ -361,7 +378,7 @@ body {
 }
 @media screen and (min-width: 1170px) {
   .footer-page__container {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 0;
     padding: 0 15px;
     width: 1200px;
@@ -370,6 +387,12 @@ body {
 }
 .footer-page__column--2 {
   margin-left: 70px;
+}
+@media screen and (min-width: 480px) {
+  .footer-page__column--2 {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-page__column--2 {
@@ -382,18 +405,15 @@ body {
     padding-top: 12px;
   }
 }
-.footer-page__column--3 {
-  margin-left: 93px;
-  padding-top: 12px;
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer-page__column--3 {
-    padding-top: 66px;
+    margin: 0 auto;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1170px) {
   .footer-page__column--3 {
-    padding-top: 12px;
+    margin-top: 12px;
   }
 }
 .footer-page__title {
@@ -406,7 +426,7 @@ body {
   font-family: "Roboto";
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer-page__title {
     display: flex;
     align-items: center;
@@ -438,7 +458,7 @@ body {
   font-family: "Roboto";
   color: #FFF;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .contact-information__adress {
     display: flex;
     align-items: center;
@@ -460,7 +480,7 @@ body {
   font-family: "Roboto";
   justify-content: start;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .contact-information__contact {
     display: flex;
     align-items: center;
@@ -504,18 +524,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 570px;
-  height: auto;
   margin-top: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer-form {
     flex-direction: column;
+    width: 450px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1170px) {
   .footer-form {
     flex-direction: row;
+    width: 570px;
+    height: auto;
   }
 }
 .footer-form__but {
@@ -536,7 +558,7 @@ body {
   border-radius: 5px;
   border: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer-form__but {
     margin-top: 20px;
   }
@@ -560,7 +582,7 @@ body {
   padding: 15px 16px;
   transition: all ease 0.2s;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer-form__field {
     width: 450px;
     height: 50px;

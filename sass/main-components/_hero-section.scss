@@ -2,7 +2,7 @@
 .hero-section{
     @include flex;
     flex-direction: column;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         @include size-of-box(auto, 400px);
     }
     @media screen and (min-width: 1170px) {
@@ -13,7 +13,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     &__title{
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             @include size-of-box(307px, auto);
             @include text-style(900, 26px, 1.36, center, 00.06em, $main-title-color);
         }

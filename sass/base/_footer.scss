@@ -5,13 +5,19 @@
     &__container{
         margin: 0 auto;
         @include flex;
+        @media screen and (min-width: 480px) {
+            flex-direction: column;
+            @include size-of-box(480px, auto);
+            padding: 0 15px;
+        }
         @media screen and (min-width: 768px) {
+            flex-direction: row;
             flex-wrap: wrap;
             @include size-of-box(768px, auto);
             padding: 0 89px;
         }
         @media screen and (min-width: 1170px) {
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             margin-top: 0;
             padding: 0 15px;
             @include size-of-box(1200px, auto);
@@ -19,6 +25,10 @@
     }
     &__column--2{
         margin-left: 70px;
+        @media screen and (min-width: 480px) {
+            margin: 0 auto;
+            margin-top: 60px;
+        }
         @media screen and (min-width: 768px) {
             margin-top: -42px;
         }
@@ -28,19 +38,18 @@
         }
     }
     &__column--3{
-        margin-left: 93px;
-        padding-top: 12px;
-        @media screen and (min-width: 768px) {
-            padding-top: 66px;
+        @media screen and (min-width: 480px) {
+            margin: 0 auto;
+            margin-top: 60px;
         }
         @media screen and (min-width: 1170px) {
-            padding-top: 12px;
+            margin-top: 12px;
         }
     }
     &__title{
         @include text-style(700, 14px, 1.14, auto, 0.03em, $footer-color);
         text-transform: uppercase;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             @include flex;
         }
         @media screen and (min-width: 1170px) {
@@ -59,7 +68,7 @@
     &__adress{
         @include text-style(400, 14px, 1.71, start, 0.03em, $footer-color);
         color: $footer-color;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             @include flex;
         }
         @media screen and (min-width: 1170px) {
@@ -69,7 +78,7 @@
     &__contact{
         @include text-style(400, 14px, 1.71, start, 0.03em, rgba(255, 255, 255, 0.6));
         justify-content: start;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             @include flex;
         }
         @media screen and (min-width: 1170px) {
@@ -99,13 +108,14 @@
 }
 .footer-form{
     @include flex(space-between);
-    @include size-of-box(570px, auto);
     margin-top: 20px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         flex-direction: column;
+        @include size-of-box(450px, auto);
     }
     @media screen and (min-width: 1170px) {
         flex-direction: row;
+        @include size-of-box(570px, auto);
     }
     &__but{
         @include flex;
@@ -115,7 +125,7 @@
         box-shadow: $footer-button-shadow;
         border-radius: 5px;
         border: 0;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             margin-top: 20px;
         }
         @media screen and (min-width: 1170px) {
@@ -130,7 +140,7 @@
         background-color: transparent;
         padding: 15px 16px;
         transition: all ease 0.2s;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             @include size-of-box(450px, 50px);
         }
         @media screen and (min-width: 1170px) {

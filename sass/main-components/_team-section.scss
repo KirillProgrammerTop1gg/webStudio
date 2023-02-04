@@ -1,39 +1,60 @@
 /* section team */
 .team-section{
     background-color: $team-section-background-color;
-    @extend %section-padding;
+    @media screen and (min-width: 480px) {
+        padding: 60px 0;
+    }
+    @media screen and (min-width: 1170px) {
+        padding: 94px 0;
+    }
 }
 .workers{
     @include flex(space-between);
-    margin-top: 50px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         flex-wrap: wrap;
-        @include size-of-box(738px, auto);
+        @include size-of-box(450px, auto);
         margin: 0 auto;
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 768px) {
+        @include size-of-box(738px, auto);
     }
     @media screen and (min-width: 1170px) {
         flex-wrap: nowrap;
         @include size-of-box(auto, auto);
+        margin-top: 50px;
     }
     &__worker{
         background: $worker-background-color;
         box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
         border-radius: 0px 0px 4px 4px;
         padding-bottom: 30px;
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, auto);
+            &:nth-child(n+2){
+                margin-top: 30px;
+            }
+        }
         @media screen and (min-width: 768px) {
             @include size-of-box(354px, auto);
+            &:nth-child(n){
+                margin-top: 0;
+            }
             &:nth-child(n+3){
                 margin-top: 30px;
             }
         }
         @media screen and (min-width: 1170px) {
-            &:nth-child(n+4){
+            &:nth-child(n){
                 margin-top: 0;
             }
             @include size-of-box(270px, auto);
         }
     }
     &__photo{
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, auto);
+        }
         @media screen and (min-width: 768px) {
             @include size-of-box(354px, auto);
         }

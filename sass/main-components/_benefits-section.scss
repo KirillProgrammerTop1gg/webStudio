@@ -1,12 +1,20 @@
 /* section benefits */
 .benefits-section{
-    padding-top: 94px;
+    @media screen and (min-width: 480px) {
+        padding: 60px 0;
+    }
+    @media screen and (min-width: 1170px) {
+        padding: 94px 0;
+    }
     &__list{
-        @media screen and (min-width: 768px) {
-            flex-wrap: wrap;
+        @media screen and (min-width: 480px) {
             @include flex(space-between);
-            @include size-of-box(738px, auto);
+            flex-wrap: wrap;
+            @include size-of-box(450px, auto);
             margin: 0 auto;
+        }
+        @media screen and (min-width: 768px) {
+            @include size-of-box(738px, auto);
         }
         @media screen and (min-width: 1170px) {
             flex-wrap: nowrap;
@@ -14,6 +22,9 @@
         }
     }
     &__item:before{
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, 120px);
+        }
         @media screen and (min-width: 768px) {
             @include size-of-box(354px, 120px);
         }
@@ -42,25 +53,43 @@
         &:nth-child(4)::before{
             background-image: url('../imgs/imgDecorative/icon4.png');
         }
+        @media screen and (min-width: 480px) {
+            &:nth-child(n+2){
+                margin-top: 30px;
+            }
+        }
         @media screen and (min-width: 768px) {
+            &:nth-child(n){
+                margin-top: 0;
+            }
             &:nth-child(n+3){
                 margin-top: 37px;
             }
         }
         @media screen and (min-width: 1170px) {
-            &:nth-child(n+4){
+            &:nth-child(n){
                 margin-top: 0;
             }
         }
     }
     &__title{
         @include text-style(700, 14px, 1.14, auto, 0.03em, $main-color);
-        @include size-of-box(270px, auto);
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, auto);
+        }
+        @media screen and (min-width: 768px) {
+            @include size-of-box(270px, auto);
+        }
         text-transform: uppercase;
     }
     &__text{
         @include text-style(400, 14px, 1.71, auto, 0.03em, $submain-color);
-        @include size-of-box(270px, auto);
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, auto);
+        }
+        @media screen and (min-width: 768px) {
+            @include size-of-box(270px, auto);
+        }
         margin-top: 10px;
     }
 }
