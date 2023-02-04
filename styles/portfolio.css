@@ -328,7 +328,16 @@ body {
 }
 .projects__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transform: scale(1.1);
+}
+@media screen and (min-width: 480px) {
+  .projects__item:hover {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .projects__item:hover {
+    transform: scale(1.1);
+  }
 }
 @media screen and (min-width: 480px) {
   .projects__img {
@@ -385,7 +394,6 @@ body {
   padding: 63px 24px;
   opacity: 0;
   transition: all cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.3s;
-  transform: translateY(50px) scale(1.1) rotate(10deg);
 }
 @media screen and (min-width: 480px) {
   .projects__overlay {
@@ -403,6 +411,7 @@ body {
   .projects__overlay {
     width: 370px;
     height: 294px;
+    transform: translateY(50px) scale(1.1) rotate(10deg);
   }
 }
 

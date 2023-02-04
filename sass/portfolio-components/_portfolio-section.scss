@@ -90,7 +90,12 @@
         }
         &:hover{
             box-shadow: $project_boxshadow;
-            transform: scale(1.1);
+            @media screen and (min-width: 480px) {
+                transform: scale(1);
+            }
+            @media screen and (min-width: 1170px) {
+                transform: scale(1.1);
+            }
         }
     }
     &__img{
@@ -126,12 +131,12 @@
         }
         @media screen and (min-width: 1170px) {
             @include size-of-box(370px, 294px);
+            transform: translateY(50px) scale(1.1) rotate(10deg);
         }
         @include text-style(400, 18px, 1.56, auto, 0.03em, $portfolio-color, 'Roboto');
         top: 0;
         padding: 63px 24px;
         opacity: 0;
         transition: all cubic-bezier(.11,.2,.55,1.27) 0.3s;
-        transform: translateY(50px) scale(1.1) rotate(10deg);
     }
 }
