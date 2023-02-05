@@ -1,9 +1,18 @@
 /* header */
 .header-page{
-    @include size-of-box(auto, 80px);
     &__container{
         @include flex;
         height: inherit;
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+            @include size-of-box(auto, 130px);
+            padding-top: 20px;
+        }
+        @media screen and (min-width: 480px) {
+            flex-direction: row;
+            @include size-of-box(auto, 80px);
+            padding-top: 0;
+        }
     }
     &__nav{
         @include flex;
@@ -12,6 +21,9 @@
 }
 .pages{
     @include flex(space-between);
+    @media screen and (min-width: 320px) {
+        @include size-of-box(290px, auto);
+    }
     @media screen and (min-width: 480px) {
         @include size-of-box(290px, auto);
         margin-left: 30px;
@@ -46,7 +58,7 @@
     }
 }
 .contacts{
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: none;
     }
     @media screen and (min-width: 768px) {
@@ -60,7 +72,7 @@
     margin-left: auto;
     &__link{
         @include text-style(500, 14px, 1.17, auto, 0.02em, $submain-color);
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
             font-size: 11.5px;
             margin-top: 12px;
             &:first-child{

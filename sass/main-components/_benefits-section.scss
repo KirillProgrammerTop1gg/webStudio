@@ -1,17 +1,21 @@
 /* section benefits */
 .benefits-section{
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding: 60px 0;
     }
     @media screen and (min-width: 1170px) {
         padding: 94px 0;
     }
     &__list{
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             @include flex(space-between);
             flex-wrap: wrap;
-            @include size-of-box(450px, auto);
             margin: 0 auto;
+            min-width: 100%;
+            max-width: 450px;
+        }
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, auto);
         }
         @media screen and (min-width: 768px) {
             @include size-of-box(738px, auto);
@@ -22,6 +26,11 @@
         }
     }
     &__item:before{
+        @media screen and (min-width: 320px) {
+            height: 120px;
+            min-width: 100%;
+            max-width: 450px;
+        }
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, 120px);
         }
@@ -53,7 +62,7 @@
         &:nth-child(4)::before{
             background-image: url('../imgs/imgDecorative/icon4.png');
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             &:nth-child(n+2){
                 margin-top: 30px;
             }
@@ -74,6 +83,11 @@
     }
     &__title{
         @include text-style(700, 14px, 1.14, start, 0.03em, $main-color);
+        @media screen and (min-width: 320px) {
+            text-align: center;
+            min-width: 100%;
+            max-width: 450px;
+        }
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, auto);
             text-align: center;
@@ -86,8 +100,14 @@
     }
     &__text{
         @include text-style(400, 14px, 1.71, auto, 0.03em, $submain-color);
+        @media screen and (min-width: 320px) {
+            min-width: 100%;
+            max-width: 450px;
+            padding-left: 15px;
+        }
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, auto);
+            padding-left: 0;
         }
         @media screen and (min-width: 768px) {
             @include size-of-box(270px, auto);

@@ -3,10 +3,14 @@
     @extend %section-padding;
     &__list{
         @include flex(space-between);
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 320px) {
             flex-wrap: wrap;
-            @include size-of-box(450px, auto);
             margin: 50px auto 0;
+            min-width: 100%;
+            max-width: 450px;
+        }
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, auto);
         }
         @media screen and (min-width: 768px) {
             @include size-of-box(738px, auto);
@@ -21,8 +25,22 @@
         transition: all ease-out 0.2s;
     }
     &__item{
+        @media screen and (min-width: 320px) {
+            &:nth-child(n+2){
+                margin-top: 30px;
+            }
+            &:hover{
+                transform: skew(0deg, 0deg);
+            }
+            height: 92px;
+            min-width: 100%;
+            max-width: 450px;
+        }
         @media screen and (min-width: 480px) {
             @include size-of-box(210px, 92px);
+            &:nth-child(n){
+                margin-top: 0;
+            }
             &:nth-child(n+3){
                 margin-top: 30px;
             }
@@ -54,7 +72,12 @@
         transition: all ease-in-out 0.2s;
         &:hover > svg{
             fill: $active-color;
-            transform: translate(30px, 10px);
+            @media screen and (min-width: 320px) {
+                transform: translate(0px, 0px);
+            }
+            @media screen and (min-width: 480px) {
+                transform: translate(30px, 10px);
+            }
         }
     }
 }

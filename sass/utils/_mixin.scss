@@ -4,6 +4,8 @@
     justify-content: $justify-content-stat;
 }
 @mixin size-of-box($width, $height){
+    min-width: auto;
+    max-width: none;
     width: $width;
     height: $height;
 }

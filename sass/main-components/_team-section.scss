@@ -1,7 +1,7 @@
 /* section team */
 .team-section{
     background-color: $team-section-background-color;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding: 60px 0;
     }
     @media screen and (min-width: 1170px) {
@@ -10,11 +10,15 @@
 }
 .workers{
     @include flex(space-between);
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         flex-wrap: wrap;
-        @include size-of-box(450px, auto);
+        min-width: 100%;
+        max-width: 450px;
         margin: 0 auto;
         margin-top: 30px;
+    }
+    @media screen and (min-width: 480px) {
+        @include size-of-box(450px, auto);
     }
     @media screen and (min-width: 768px) {
         @include size-of-box(738px, auto);
@@ -29,11 +33,15 @@
         box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
         border-radius: 0px 0px 4px 4px;
         padding-bottom: 30px;
-        @media screen and (min-width: 480px) {
-            @include size-of-box(450px, auto);
+        @media screen and (min-width: 320px) {
+            min-width: 100%;
+            max-width: 450px;
             &:nth-child(n+2){
                 margin-top: 30px;
             }
+        }
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, auto);
         }
         @media screen and (min-width: 768px) {
             @include size-of-box(354px, auto);
@@ -52,6 +60,10 @@
         }
     }
     &__photo{
+        @media screen and (min-width: 320px) {
+            min-width: 100%;
+            max-width: 450px;
+        }
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, auto);
         }
