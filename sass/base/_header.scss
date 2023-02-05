@@ -10,7 +10,7 @@
         }
         @media screen and (min-width: 480px) {
             flex-direction: row;
-            @include size-of-box(auto, 80px);
+            height: 80px;
             padding-top: 0;
         }
     }

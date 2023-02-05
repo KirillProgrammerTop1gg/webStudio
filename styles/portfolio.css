@@ -85,9 +85,6 @@ body {
 @media screen and (min-width: 480px) {
   .header-page__container {
     flex-direction: row;
-    min-width: auto;
-    max-width: none;
-    width: auto;
     height: 80px;
     padding-top: 0;
   }
