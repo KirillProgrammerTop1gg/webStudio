@@ -21,10 +21,10 @@
             padding: 0 89px;
         }
         @media screen and (min-width: 1170px) {
+            padding: 0;
             flex-wrap: nowrap;
             margin-top: 0;
-            padding: 0 15px;
-            @include size-of-box(1200px, auto);
+            @include size-of-box(1170px, auto);
         }
     }
     &__column--2{
@@ -34,7 +34,7 @@
             margin-top: 60px;
         }
         @media screen and (min-width: 768px) {
-            margin-top: -42px;
+            margin-top: -50px;
         }
         @media screen and (min-width: 1170px) {
             margin-top: 0;

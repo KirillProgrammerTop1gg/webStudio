@@ -63,7 +63,7 @@ body {
   .header-page__container {
     flex-direction: row;
     height: 80px;
-    padding-top: 0;
+    padding: 0 15px;
   }
 }
 .header-page__nav {
@@ -249,7 +249,7 @@ body {
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/fon.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -317,12 +317,12 @@ body {
 /* section benefits */
 @media screen and (min-width: 320px) {
   .benefits-section {
-    padding: 60px 0;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1170px) {
   .benefits-section {
-    padding: 94px 0;
+    padding-top: 94px;
   }
 }
 @media screen and (min-width: 320px) {
@@ -1104,12 +1104,12 @@ body {
 }
 @media screen and (min-width: 1170px) {
   .footer-page__container {
+    padding: 0;
     flex-wrap: nowrap;
     margin-top: 0;
-    padding: 0 15px;
     min-width: auto;
     max-width: none;
-    width: 1200px;
+    width: 1170px;
     height: auto;
   }
 }
@@ -1124,7 +1124,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-page__column--2 {
-    margin-top: -42px;
+    margin-top: -50px;
   }
 }
 @media screen and (min-width: 1170px) {

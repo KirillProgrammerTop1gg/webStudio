@@ -9,7 +9,7 @@
         @include size-of-box(auto, 600px);
     }
     background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/fon.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     &__title{
