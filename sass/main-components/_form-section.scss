@@ -74,9 +74,11 @@
             min-width: 100%;
             max-width: 450px;
         }
-        @media screen and (min-width: 450px) {
+        @media screen and (min-width: 480px) {
             @include size-of-box(370px, 40px);
         }
+        @media screen and (min-width: 1170px){
+            @include size-of-box(450px, 40px);
         display: block;
     }
     &__svg{
@@ -92,8 +94,11 @@
             min-width: 100%;
             max-width: 450px;
         }
-        @media screen and (min-width: 450px) {
+        @media screen and (min-width: 480px) {
             @include size-of-box(370px, 120px);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(450px, 120px);
         }
     }
     &__checkbox{
