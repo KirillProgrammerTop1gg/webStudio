@@ -7,7 +7,7 @@
             flex-wrap: wrap;
             margin: 50px auto 0;
             min-width: 100%;
-            max-width: 450px;
+            max-width: 480px;
         }
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, auto);
@@ -34,7 +34,7 @@
             }
             height: 92px;
             min-width: 100%;
-            max-width: 450px;
+            max-width: 480px;
         }
         @media screen and (min-width: 480px) {
             @include size-of-box(210px, 92px);
