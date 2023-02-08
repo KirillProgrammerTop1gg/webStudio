@@ -79,6 +79,7 @@
         }
         @media screen and (min-width: 1170px){
             @include size-of-box(450px, 40px);
+        }
         display: block;
     }
     &__svg{
