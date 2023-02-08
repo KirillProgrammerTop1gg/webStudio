@@ -502,23 +502,20 @@ body {
 }
 
 /* section services */
+.services-section {
+  display: none;
+}
 .services-section__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
 }
-@media screen and (min-width: 320px) {
-  .services-section {
-    display: none;
-  }
-}
 @media screen and (min-width: 1170px) {
   .services-section {
     display: block;
   }
 }
-
 .services-section__item {
   position: relative;
   font-weight: 700;
