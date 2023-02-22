@@ -28,8 +28,29 @@ body {
 }
 
 .container {
-  max-width: 1170px;
   margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .container {
+    max-width: 1170px;
+  }
 }
 
 .section-title {
@@ -317,11 +338,12 @@ body {
 /* section benefits */
 @media screen and (min-width: 320px) {
   .benefits-section {
-    padding-top: 60px;
+    padding: 60px 0;
   }
 }
 @media screen and (min-width: 1170px) {
   .benefits-section {
+    padding: 0;
     padding-top: 94px;
   }
 }
@@ -928,17 +950,26 @@ body {
   margin-top: 12px;
 }
 .form-section__item:last-child {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
-  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: auto;
   margin-top: 20px;
+}
+@media screen and (min-width: 320px) {
+  .form-section__item:last-child {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    font-family: "Roboto";
+  }
+}
+@media screen and (min-width: 1170px) {
+  .form-section__item:last-child {
+    font-size: 14px;
+  }
 }
 .form-section__subtitle {
   font-weight: 400;
@@ -1068,9 +1099,6 @@ body {
 }
 .footer-page__container {
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 @media screen and (min-width: 320px) {
   .footer-page__container {
@@ -1080,6 +1108,9 @@ body {
     width: 320px;
     height: auto;
     padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1095,6 +1126,7 @@ body {
   .footer-page__container {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
     min-width: auto;
     max-width: none;
     width: 768px;
@@ -1118,19 +1150,17 @@ body {
 }
 @media screen and (min-width: 320px) {
   .footer-page__column--2 {
-    margin: 0 auto;
-    margin-top: 60px;
+    margin: 60px auto 0;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-page__column--2 {
-    margin-top: -50px;
+    margin: 0 0 0 auto;
   }
 }
 @media screen and (min-width: 1170px) {
   .footer-page__column--2 {
-    margin-top: 0;
-    padding-top: 12px;
+    margin-top: 12px;
   }
 }
 @media screen and (min-width: 320px) {

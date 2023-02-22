@@ -44,7 +44,12 @@
             margin-top: 12px;
         }
         &:last-child{
-            @include text-style(400, 14px, 1.71, center, 0.03em, $submain-color);
+            @media screen and (min-width: 320px){
+                @include text-style(400, 12px, 1.71, center, 0.03em, $submain-color);
+            }
+            @media screen and (min-width: 1170px){
+                font-size: 14px;
+            }
             @include flex(auto);
             margin-top: 20px;
         }
