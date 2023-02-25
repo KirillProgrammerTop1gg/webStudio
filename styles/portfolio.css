@@ -344,7 +344,7 @@ body {
 @media screen and (min-width: 320px) {
   .projects {
     min-width: 100%;
-    max-width: 450px;
+    max-width: 480px;
     margin: 50px auto 0;
   }
 }
@@ -421,7 +421,7 @@ body {
   .projects__img {
     min-width: 320px;
     width: 100%;
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -489,7 +489,7 @@ body {
 @media screen and (min-width: 320px) {
   .projects__overlay {
     min-width: 100%;
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -718,7 +718,7 @@ body {
   .footer-form {
     flex-direction: column;
     min-width: 100%;
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -786,7 +786,7 @@ body {
   .footer-form__field {
     height: 50px;
     min-width: 100%;
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 480px) {

@@ -3,7 +3,7 @@
     padding: 40px;
     @media screen and (min-width: 320px) {
         min-width: 100%;
-        max-width: 450px;
+        max-width: 480px;
     }
     @media screen and (min-width: 480px) {
         @include size-of-box(450px, 609px);
@@ -77,10 +77,13 @@
         @media screen and (min-width: 320px) {
             height: 40px;
             min-width: 100%;
-            max-width: 450px;
+            max-width: 480px;
         }
-        @media screen and (min-width: 450px) {
+        @media screen and (min-width: 480px) {
             @include size-of-box(370px, 40px);
+        }
+        @media screen and (min-width: 1170px){
+            @include size-of-box(450px, 40px);
         }
         display: block;
     }
@@ -95,10 +98,13 @@
         @media screen and (min-width: 320px) {
             height: 120px;
             min-width: 100%;
-            max-width: 450px;
+            max-width: 480px;
         }
-        @media screen and (min-width: 450px) {
+        @media screen and (min-width: 480px) {
             @include size-of-box(370px, 120px);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(450px, 120px);
         }
     }
     &__checkbox{

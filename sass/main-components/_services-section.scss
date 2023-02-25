@@ -5,29 +5,27 @@
         @include flex(space-between);
         margin-top: 50px;
     }
-    @media screen and (min-width: 320px) {
-        display: none;
-    }
+    display: none;
     @media screen and (min-width: 1170px) {
         display: block;
     }
-}
-.services-section__item{
-    position: relative;
-    @include text-style(700, 14px, 1.14, center, 0.03em, $services-overlay-text-color);
-    text-transform: uppercase;
-    &::before{
-        content: 'Десктопні додатки';
-        @include flex;
-        position: absolute;
-        bottom: 4px;
-        background-color: $services-overlay-background-color;
-        @include size-of-box(100%, 70px);
-    }
-    &:nth-child(2)::before{
-        content: 'Мобільні додатки';
-    }
-    &:nth-child(3)::before{
-        content: 'Дизайнерські рішення';
+    &__item{
+        position: relative;
+        @include text-style(700, 14px, 1.14, center, 0.03em, $services-overlay-text-color);
+        text-transform: uppercase;
+        &::before{
+            content: 'Десктопні додатки';
+            @include flex;
+            position: absolute;
+            bottom: 4px;
+            background-color: $services-overlay-background-color;
+            @include size-of-box(100%, 70px);
+        }
+        &:nth-child(2)::before{
+            content: 'Мобільні додатки';
+        }
+        &:nth-child(3)::before{
+            content: 'Дизайнерські рішення';
+        }
     }
 }
