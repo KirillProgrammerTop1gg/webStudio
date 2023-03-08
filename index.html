@@ -10,7 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./styles/wickedcss.min.css">
     <link rel="stylesheet" href="http://www.joerezendes.com/projects/Woah.css/woah.css">
     <link rel="stylesheet" href="./styles/main.min.css">
@@ -49,6 +50,9 @@
                     +38 096 111 11 11
                 </a>
             </ul>
+            <svg width="40" height="40" class="header-page__svg" data-open-Menu>
+                <use href="./imgs/symboldefts.svg#icon-Menu">
+            </svg>
         </div>
     </header>
     <!-- основний блок -->
@@ -64,27 +68,31 @@
                 <ul class="benefits-section__list">
                     <li class="benefits-section__item">
                         <h3 class="benefits-section__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptatem
                             veritatis exercitationem
                             velit magnam iure.</p>
                     </li>
                     <li class="benefits-section__item">
                         <h3 class="benefits-section__title">ПунктуальнІсть</h3>
-                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptatem
                             veritatis exercitationem
                             velit magnam iure.
                         </p>
                     </li>
                     <li class="benefits-section__item">
                         <h3 class="benefits-section__title">ПЛАНУВАННЯ</h3>
-                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptatem
                             veritatis exercitationem
                             velit magnam iure.
                         </p>
                     </li>
                     <li class="benefits-section__item">
                         <h3 class="benefits-section__title">СУЧАСНІ ТЕхнології</h3>
-                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        <p class="benefits-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptatem
                             veritatis exercitationem
                             velit magnam iure.
                         </p>
@@ -98,14 +106,17 @@
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="services-section__list">
                     <li class="services-section__item">
-                        <img src="./imgs/imgWyWe/service1.jpg" alt="картинка з людиною яка пише код" width="370" class="services-section__img">
+                        <img src="./imgs/imgWyWe/service1.jpg" alt="картинка з людиною яка пише код" width="370"
+                            class="services-section__img">
                     </li>
                     <li class="services-section__item">
-                        <img src="./imgs/imgWyWe/service2.jpg" alt="картинка з людиною перевіряє адаптивність на телефонаї"
-                            width="370" class="services-section__img">
+                        <img src="./imgs/imgWyWe/service2.jpg"
+                            alt="картинка з людиною перевіряє адаптивність на телефонаї" width="370"
+                            class="services-section__img">
                     </li>
                     <li class="services-section__item">
-                        <img src="./imgs/imgWyWe/service3.jpg" alt="картинка з людиною яка вибарає колір" width="370" class="services-section__img">
+                        <img src="./imgs/imgWyWe/service3.jpg" alt="картинка з людиною яка вибарає колір" width="370"
+                            class="services-section__img">
                     </li>
                 </ul>
             </div>
@@ -151,7 +162,8 @@
                         </ul>
                     </li>
                     <li class="workers__worker">
-                        <img src="./imgs/imgWork/photo2.jpg" alt="фото працівника 2x" width="270" class="workers__photo">
+                        <img src="./imgs/imgWork/photo2.jpg" alt="фото працівника 2x" width="270"
+                            class="workers__photo">
                         <h3 class="workers__name">Ольга Репіна</h3>
                         <h4 class="workers__pos">Frontend Developer</h4>
                         <ul class="workers__socials">
@@ -334,11 +346,60 @@
                     <li class="form-section__item">
                         <label for="comment" class="form-section__subtitle"></label>
                         <input type="checkbox" class="form-section__checkbox" id="comment" required>
-                        <p class="form-section__text">Погоджуюсь з розсилкою і приймаю <a class="form-section__link" href="./"> Умови договору </a></p>
+                        <p class="form-section__text">Погоджуюсь з розсилкою і приймаю <a class="form-section__link"
+                                href="./"> Умови договору </a></p>
                     </li>
                 </ul>
                 <button class="form-section__send" type="submit">Надіслати</button>
             </form>
+        </div>
+        <!-- Секція "меню" -->
+        <div class="header-menu is-hidden" data-backdropMenu>
+            <button class="header-menu__close" type="button" data-close-Menu>
+                <svg class="header-menu__icon" width="40" height="40">
+                    <use href="./imgs/symboldefts.svg#icon-Close"></use>
+                </svg>
+            </button>
+            <div class="header-menu__lists">
+                <ul class="header-menu__links">
+                    <li class="header-menu__item">
+                        <a href="./index.html" class="header-menu__link header-menu__overlay">Студія</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="./portfolio.html" class="header-menu__link">Портфоліо</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">Контакти</a>
+                    </li>
+                </ul>
+                <div class="header-menu__container">
+                    <ul class="header-menu__contacts">
+                        <a href="mailto:info@devstudio.com" class="header-menu__contact">
+                            info@devstudio.com
+                        </a>
+                        <a href="tel:+380961111111" class="header-menu__contact">
+                            +38 096 111 11 11
+                        </a>
+                    </ul>
+                    <p class="header-menu__text">
+                        <a href="https://instagram.com" class="header-menu__soc">
+                            Instagram
+                        </a>
+                        |
+                        <a href="https://twitter.com" class="header-menu__soc">
+                            Twitter
+                        </a>
+                        |
+                        <a href="https://facebook.com" class="header-menu__soc">
+                            Facebook
+                        </a>
+                        |
+                        <a href="https://linkedin.com" class="header-menu__soc">
+                            LinkedIn
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Підвал сайту -->
@@ -351,10 +412,12 @@
                         <address class="contact-information__adress">м. Київ, пр-т Лесі Українки, 26</address>
                     </li>
                     <li class="contact-information__item">
-                        <a href="mailto:info@example.com" class="pages__link contacts__link contact-information__contact">info@example.com</a>
+                        <a href="mailto:info@example.com"
+                            class="pages__link contacts__link contact-information__contact">info@example.com</a>
                     </li>
                     <li class="contact-information__item">
-                        <a href="tel:+380961111111" class="pages__link contacts__link contact-information__contact">+38 096 111 11 11</a>
+                        <a href="tel:+380961111111" class="pages__link contacts__link contact-information__contact">+38
+                            096 111 11 11</a>
                     </li>
                 </ul>
             </div>
@@ -407,29 +470,49 @@
     </footer>
     <script>
         const refs = {
-          openModalBtn: document.querySelector("[data-open-modal]"),
-          closeModalBtn: document.querySelector("[data-close-modal]"),
-          backdrop: document.querySelector("[data-backdrop]"),
+            openModalBtn: document.querySelector("[data-open-modal]"),
+            closeModalBtn: document.querySelector("[data-close-modal]"),
+            backdrop: document.querySelector("[data-backdrop]"),
         };
-  
+
         refs.openModalBtn.addEventListener("click", toggleModal);
         refs.closeModalBtn.addEventListener("click", toggleModal);
-  
+
         refs.backdrop.addEventListener("click", logBackdropClick);
-  
+
         function toggleModal() {
-          refs.backdrop.classList.toggle("is-hidden");
-          
-          if(document.body.style.overflow == 'hidden'){
-            document.body.style.overflow = 'visible';
-          }
-          else{
-            document.body.style.overflow = 'hidden';
-          }
+            refs.backdrop.classList.toggle("is-hidden");
+
+            if (document.body.style.overflow == 'hidden') {
+                document.body.style.overflow = 'visible';
+            }
+            else {
+                document.body.style.overflow = 'hidden';
+            }
         }
-  
+
         function logBackdropClick() {
-          console.log("Це клік в бекдроп");
+            console.log("Це клік в бекдроп");
+        }
+
+        const refsMenu = {
+            openMenuBtn: document.querySelector("[data-open-Menu]"),
+            closeMenuBtn: document.querySelector("[data-close-Menu]"),
+            backdrop: document.querySelector("[data-backdropMenu]"),
+        };
+
+        refsMenu.openMenuBtn.addEventListener("click", toggleMenu);
+        refsMenu.closeMenuBtn.addEventListener("click", toggleMenu);
+
+        function toggleMenu() {
+            refsMenu.backdrop.classList.toggle("is-hidden");
+
+            if (document.body.style.overflow == 'hidden') {
+                document.body.style.overflow = 'visible';
+            }
+            else {
+                document.body.style.overflow = 'hidden';
+            }
         }
     </script>
 </body>

@@ -1,0 +1,60 @@
+.header-menu{
+    width: 100%;
+    max-width: 480px;
+    height: 796px;
+    background-color: $form-background-color;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px 15px 48px 40px;
+    transition: all 0.2s ease-in;
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.2s ease-in-out;
+    }
+    &__close{
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background-color: transparent;
+        display: block;
+        margin-left: auto;
+    }
+    &__lists{
+        @include flex(space-between);
+        align-items: start;
+        flex-direction: column;
+        height: 700px;
+    }
+    &__links{
+        gap: 34px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        @include text-style(500,40px,1.18,left,0.02em,$main-color);
+    }
+    &__overlay{
+        color: $active-color;
+    }
+    &__contacts{
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__contact:first-child{
+        @include text-style(500,34px,1.18,left,0.02em,$active-color);
+    }
+    &__contact:last-child{
+        @include text-style(500,24px,1.17,left,0.02em,$submain-color);
+    }
+    &__text{
+        color: $menu-color;
+        @include flex(space-between);
+        margin-top: 64px;
+    }
+    &__soc{
+        @include text-style(500,18px,1.23,center,0.02em,$active-color);
+    }
+}
