@@ -508,7 +508,8 @@ body {
 .header-menu {
   width: 100%;
   max-width: 480px;
-  height: 796px;
+  height: 100%;
+  max-height: 796px;
   background-color: #FFF;
   position: fixed;
   right: 0;
@@ -535,7 +536,6 @@ body {
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  height: 700px;
 }
 .header-menu__links {
   gap: 34px;
