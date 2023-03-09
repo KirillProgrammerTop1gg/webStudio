@@ -536,6 +536,8 @@ body {
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
+  height: 100%;
+  max-height: 700px;
 }
 .header-menu__links {
   gap: 34px;
