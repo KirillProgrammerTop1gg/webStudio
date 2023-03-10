@@ -9,6 +9,9 @@
     top: 0;
     padding: 10px 15px 48px 40px;
     transition: all 0.2s ease-in;
+    @media screen and (min-width: 768px){
+        display: none;
+    }
     &.is-hidden {
         opacity: 0;
         pointer-events: none;
