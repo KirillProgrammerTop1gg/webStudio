@@ -1096,13 +1096,17 @@ body {
   width: 100%;
   max-width: 480px;
   height: 100%;
-  max-height: 796px;
   background-color: #FFF;
   position: fixed;
   right: 0;
   top: 0;
   padding: 10px 15px 48px 40px;
   transition: all 0.2s ease-in;
+}
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: none;
+  }
 }
 .header-menu.is-hidden {
   opacity: 0;
