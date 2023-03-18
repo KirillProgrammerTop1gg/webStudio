@@ -20,6 +20,11 @@ body{
     }
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 .section-title{
     @include text-style(700, 36px, 1.16, center, 0.03em, $main-color);
 }
