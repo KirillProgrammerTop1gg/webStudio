@@ -40,11 +40,9 @@
 .projects{
     @include flex(space-between);
     flex-wrap: wrap;
-    @media screen and (min-width: 320px) {
-        min-width: 100%;
-        max-width: 480px;
-        margin: 50px auto 0;
-    }
+    min-width: 100%;
+    max-width: 480px;
+    margin: 50px auto 0;
     @media screen and (min-width: 480px) {
         @include size-of-box(450px, auto);
     }
@@ -96,11 +94,9 @@
         }
     }
     &__img{
-        @media screen and (min-width: 320px) {
-            min-width: 320px;
-            width: 100%;
-            max-width: 480px;
-        }
+        min-width: 320px;
+        width: 100%;
+        max-width: 480px;
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, 294px);
         }

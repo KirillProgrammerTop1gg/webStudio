@@ -45,10 +45,14 @@
         }
         &:last-child{
             @include text-style(400, 12px, 1.71, center, 0.03em, $submain-color);
+            @include flex(center);
+            align-items: flex-start;
+            @media screen and (min-width: 480px){
+                align-items: center;
+            }
             @media screen and (min-width: 1170px){
                 font-size: 14px;
             }
-            @include flex(center);
             margin-top: 20px;
         }
     }

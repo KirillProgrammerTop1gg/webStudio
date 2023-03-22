@@ -942,7 +942,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: flex-start;
   margin-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .form-section__item:last-child {
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1170px) {
   .form-section__item:last-child {
