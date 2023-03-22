@@ -48,15 +48,31 @@
         flex-direction: column;
     }
     &__contact:first-child{
-        @include text-style(500,34px,1.18,left,0.02em,$active-color);
+        @include text-style(500,30px,1.18,left,0.02em,$active-color);
+        @media screen and (min-width:480px){
+            font-size:34px;
+        }
     }
     &__contact:last-child{
-        @include text-style(500,24px,1.17,left,0.02em,$submain-color);
+        @include text-style(500,22px,1.17,left,0.02em,$submain-color);
+        @media screen and (min-width:480px){
+            font-size:24px;
+        }
+    }
+    &__container{
+        width:100%;
     }
     &__text{
         color: $menu-color;
-        @include flex(space-between);
+        @include flex(center);
         margin-top: 64px;
+        flex-wrap:wrap;
+        gap: 5px;
+        @media screen and (min-width:480px){
+            flex-wrap:nowrap;
+            gap:0px;
+            justify-content: space-between;
+        }
     }
     &__soc{
         @include text-style(500,18px,1.23,center,0.02em,$active-color);
