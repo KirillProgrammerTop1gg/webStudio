@@ -4,11 +4,10 @@
         @include flex(space-between);
         height: inherit;
         flex-direction: row;
-        @include size-of-box(auto, 130px);
-        padding-top: 20px;
-        @media screen and (min-width: 480px) {
+        @include size-of-box(auto, 60px);
+        padding: 0 15px;
+        @media screen and (min-width: 768px) {
             height: 80px;
-            padding: 0 15px;
         }
     }
     &__nav{

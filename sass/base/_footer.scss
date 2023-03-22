@@ -4,28 +4,22 @@
     background-color: $footer-background-color;
     &__container{
         margin: 0 auto;
-        @media screen and (min-width: 320px) {
-            flex-direction: column;
-            @include size-of-box(320px, auto);
-            padding: 0 5px;
-            @include flex;
-        }
-        @media screen and (min-width: 480px) {
-            @include size-of-box(480px, auto);
-            padding: 0 15px;
-        }
+        flex-direction: column;
+        width: 100%;
+        padding: 0 15px;
+        @include flex;
         @media screen and (min-width: 768px) {
             flex-direction: row;
             flex-wrap: wrap;
             align-items: baseline;
+            justify-content: space-between;
             @include size-of-box(768px, auto);
             padding: 0 89px;
         }
-        @media screen and (min-width: 1170px) {
-            padding: 0;
+        @media screen and (min-width: 1200px) {
+            padding: 0 15px;
             flex-wrap: nowrap;
-            margin-top: 0;
-            @include size-of-box(1170px, auto);
+            @include size-of-box(1200px, auto);
         }
     }
     &__column--2{
@@ -36,17 +30,19 @@
         @media screen and (min-width: 768px) {
             margin: 0 0 0 auto;
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px) {
+            margin: 0;
             margin-top: 12px;
         }
     }
     &__column--3{
-        @media screen and (min-width: 320px) {
-            margin: 0 auto;
-            margin-top: 60px;
-        }
-        @media screen and (min-width: 1170px) {
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 100%;
+        @media screen and (min-width: 1200px) {
             margin-top: 12px;
+            width: auto;
+            margin: 0;
         }
     }
     &__title{
@@ -55,7 +51,7 @@
         @media screen and (min-width: 320px) {
             @include flex;
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px) {
             display: block;
         }
     }
@@ -74,7 +70,7 @@
         @media screen and (min-width: 320px) {
             @include flex;
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px) {
             display: block;
         }
     }
@@ -84,7 +80,7 @@
         @media screen and (min-width: 320px) {
             @include flex;
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px) {
             display: block;
         }
     }
@@ -112,15 +108,9 @@
 .footer-form{
     @include flex(space-between);
     margin-top: 20px;
-    @media screen and (min-width: 320px) {
-        flex-direction: column;
-        min-width: 100%;
-        max-width: 480px;
-    }
-    @media screen and (min-width: 480px) {
-        @include size-of-box(450px, auto);
-    }
-    @media screen and (min-width: 1170px) {
+    width: 100%;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
         flex-direction: row;
         @include size-of-box(570px, auto);
     }
@@ -135,7 +125,7 @@
         @media screen and (min-width: 320px) {
             margin-top: 20px;
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px) {
             margin-top: 0;
         }
     }
@@ -155,7 +145,7 @@
         @media screen and (min-width: 480px) {
             @include size-of-box(450px, 50px);
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px) {
             @include size-of-box(358px, 50px);
         }
         &:hover{
