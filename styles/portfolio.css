@@ -267,6 +267,14 @@ img {
   flex-wrap: wrap;
   gap: 15px 8px;
 }
+@media screen and (min-width: 480px) {
+  .filter {
+    min-width: auto;
+    max-width: none;
+    width: 330px;
+    height: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .filter {
     min-width: auto;
