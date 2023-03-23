@@ -262,7 +262,7 @@ img {
   justify-content: start;
   min-width: auto;
   max-width: none;
-  width: 320px;
+  width: 290px;
   height: auto;
   flex-wrap: wrap;
   gap: 15px 8px;
@@ -297,11 +297,7 @@ img {
   border: 0;
   border-radius: 4px;
   transition: all cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
-}
-@media screen and (min-width: 320px) {
-  .filter__but {
-    padding: 6px 18px;
-  }
+  padding: 6px 15px;
 }
 @media screen and (min-width: 480px) {
   .filter__but {
@@ -394,7 +390,6 @@ img {
   }
 }
 .projects__img {
-  min-width: 320px;
   width: 100%;
   max-width: 480px;
 }
