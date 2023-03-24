@@ -1,10 +1,6 @@
 /* form section */
 .form-section{
     padding: 40px;
-    @media screen and (min-width: 320px) {
-        min-width: 100%;
-        max-width: 480px;
-    }
     @media screen and (min-width: 480px) {
         @include size-of-box(450px, 609px);
     }
@@ -144,6 +140,7 @@
     background: $overlay-background;
     z-index: 2;
     transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
+    padding: 0 15px;
 }
 .overlay.is-hidden{
     opacity: 0;
