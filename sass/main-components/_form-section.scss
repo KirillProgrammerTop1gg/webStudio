@@ -1,17 +1,14 @@
 /* form section */
 .form-section{
     padding: 40px;
+    
     @media screen and (min-width: 480px) {
         @include size-of-box(450px, 609px);
     }
     @media screen and (min-width: 1170px) {
         @include size-of-box(528px, 581px);
     }
-    position: absolute;
-    z-index: 3;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     background: $form-background-color;
     box-shadow: $worker-boxshadow1, $worker-boxshadow2, $worker-boxshadow3;
     @extend %normal-border-radius;
@@ -141,6 +138,7 @@
     z-index: 2;
     transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
     padding: 0 15px;
+    @include flex;
 }
 .overlay.is-hidden{
     opacity: 0;

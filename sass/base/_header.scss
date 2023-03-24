@@ -9,6 +9,7 @@
         @media screen and (min-width: 768px) {
             height: 80px;
         }
+        max-width: 1200px;
     }
     &__nav{
         @include flex;
