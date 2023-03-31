@@ -99,16 +99,6 @@
     }
     &__img{
         width: 100%;
-        max-width: 480px;
-        @media screen and (min-width: 480px) {
-            @include size-of-box(450px, 294px);
-        }
-        @media screen and (min-width: 768px) {
-            @include size-of-box(354px, 294px);
-        }
-        @media screen and (min-width: 1170px) {
-            @include size-of-box(370px, 294px);
-        }
     }
     &__texts{
         margin-top: 20px;
