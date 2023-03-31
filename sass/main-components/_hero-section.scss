@@ -2,16 +2,36 @@
 .hero-section{
     @include flex;
     flex-direction: column;
-    @media screen and (min-width: 320px) {
-        @include size-of-box(auto, 400px);
-    }
-    @media screen and (min-width: 1170px) {
-        @include size-of-box(auto, 600px);
-    }
-    background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/fon.jpg');
+    @include size-of-box(auto, 400px);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
+    background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/optimized/hero-mobile@1x.webp');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/optimized/hero-mobile@2x.webp');
+    }
+
+    @media screen and (min-width: 768px){
+        background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/optimized/hero-tablet@1x.webp');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/optimized/hero-tablet@2x.webp');
+        }
+    }
+
+    @media screen and (min-width: 1170px){
+        @include size-of-box(auto, 600px);
+        background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/optimized/hero-desktop@1x.webp');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background: linear-gradient(to left, $background-hero-overlay-color, $background-hero-overlay-color), url('../imgs/imgDecorative/optimized/hero-desktop@2x.webp');
+        }
+    }
+    
     &__title{
         @media screen and (min-width: 320px) {
             @include size-of-box(307px, auto);

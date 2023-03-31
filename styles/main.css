@@ -258,17 +258,28 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/fon.jpg");
+  min-width: auto;
+  max-width: none;
+  width: auto;
+  height: 400px;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
+  background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-mobile@1x.webp");
 }
-@media screen and (min-width: 320px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    min-width: auto;
-    max-width: none;
-    width: auto;
-    height: 400px;
+    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-mobile@2x.webp");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-tablet@1x.webp");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-tablet@2x.webp");
   }
 }
 @media screen and (min-width: 1170px) {
@@ -277,6 +288,12 @@ img {
     max-width: none;
     width: auto;
     height: 600px;
+    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-desktop@1x.webp");
+  }
+}
+@media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-desktop@2x.webp");
   }
 }
 .hero-section__title {
