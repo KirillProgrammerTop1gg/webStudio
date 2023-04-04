@@ -48,6 +48,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .section-title {
@@ -398,9 +399,6 @@ img {
   .projects__item:hover {
     transform: scale(1.1);
   }
-}
-.projects__img {
-  width: 100%;
 }
 .projects__texts {
   margin-top: 20px;

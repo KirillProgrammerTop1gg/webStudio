@@ -53,6 +53,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .section-title {
@@ -676,36 +677,6 @@ img {
   }
   .workers__worker:nth-child(n) {
     margin-top: 0;
-  }
-}
-@media screen and (min-width: 320px) {
-  .workers__photo {
-    min-width: 100%;
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .workers__photo {
-    min-width: auto;
-    max-width: none;
-    width: 450px;
-    height: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .workers__photo {
-    min-width: auto;
-    max-width: none;
-    width: 354px;
-    height: auto;
-  }
-}
-@media screen and (min-width: 1170px) {
-  .workers__photo {
-    min-width: auto;
-    max-width: none;
-    width: 270px;
-    height: auto;
   }
 }
 .workers__name {
