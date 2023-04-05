@@ -43,7 +43,7 @@ body {
     max-width: 738px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
@@ -116,7 +116,7 @@ img {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .pages {
     margin-left: 93px;
   }
@@ -170,7 +170,7 @@ img {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     min-width: auto;
     max-width: none;
@@ -205,7 +205,7 @@ img {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contacts__link {
     font-size: 14px;
     margin-top: 0;
@@ -241,7 +241,7 @@ img {
     justify-content: center;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .main-logo {
     display: block;
   }
@@ -266,21 +266,21 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-mobile@1x.webp");
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-mobile@1x.webp");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-mobile@2x.webp");
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-mobile@2x.webp");
   }
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-tablet@1x.webp");
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-tablet@1x.webp");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-tablet@2x.webp");
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-tablet@2x.webp");
   }
 }
 @media screen and (min-width: 1170px) {
@@ -289,12 +289,12 @@ img {
     max-width: none;
     width: auto;
     height: 600px;
-    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-desktop@1x.webp");
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-desktop@1x.webp");
   }
 }
 @media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
   .hero-section {
-    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-desktop@2x.webp");
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imgs/imgDecorative/optimized/hero-desktop@2x.webp");
   }
 }
 .hero-section__title {
@@ -315,7 +315,7 @@ img {
     font-family: "Roboto";
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .hero-section__title {
     min-width: auto;
     max-width: none;
@@ -348,7 +348,7 @@ img {
     padding: 60px 0;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-section {
     padding: 0;
     padding-top: 94px;
@@ -381,7 +381,7 @@ img {
     height: auto;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-section__list {
     flex-wrap: nowrap;
     min-width: auto;
@@ -422,7 +422,7 @@ img {
     height: 120px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-section__item:before {
     min-width: auto;
     max-width: none;
@@ -455,7 +455,7 @@ img {
     margin-top: 37px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-section__item:nth-child(n) {
     margin-top: 0;
   }
@@ -540,7 +540,7 @@ img {
   justify-content: space-between;
   margin-top: 50px;
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .services-section {
     display: block;
   }
@@ -585,7 +585,7 @@ img {
     padding: 60px 0;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .team-section {
     padding: 94px 0;
   }
@@ -621,7 +621,7 @@ img {
     height: auto;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .workers {
     flex-wrap: nowrap;
     min-width: auto;
@@ -668,7 +668,7 @@ img {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .workers__worker {
     min-width: auto;
     max-width: none;
@@ -762,7 +762,7 @@ img {
     height: auto;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .clients-section__list {
     flex-wrap: nowrap;
     min-width: auto;
@@ -826,7 +826,7 @@ img {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .clients-section__item {
     min-width: auto;
     max-width: none;
@@ -869,7 +869,7 @@ img {
     height: 609px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .form-section {
     min-width: auto;
     max-width: none;
@@ -1017,7 +1017,7 @@ img {
     height: 120px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .form-section__textarea {
     min-width: auto;
     max-width: none;

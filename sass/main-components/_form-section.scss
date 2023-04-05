@@ -5,7 +5,7 @@
     @media screen and (min-width: 480px) {
         @include size-of-box(450px, 609px);
     }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px){
         @include size-of-box(528px, 581px);
     }
     position: relative;
@@ -98,7 +98,7 @@
         @media screen and (min-width: 480px) {
             @include size-of-box(370px, 120px);
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px){
             @include size-of-box(450px, 120px);
         }
     }

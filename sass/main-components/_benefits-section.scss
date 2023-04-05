@@ -3,7 +3,7 @@
     @media screen and (min-width: 320px) {
         padding: 60px 0;
     }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px){
         padding: 0;
         padding-top: 94px;
     }
@@ -21,7 +21,7 @@
         @media screen and (min-width: 768px) {
             @include size-of-box(738px, auto);
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px){
             flex-wrap: nowrap;
             @include size-of-box(auto, auto);
         }
@@ -38,7 +38,7 @@
         @media screen and (min-width: 768px) {
             @include size-of-box(354px, 120px);
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px){
             @include size-of-box(270px, 120px);
         }
         content: '';
@@ -76,7 +76,7 @@
                 margin-top: 37px;
             }
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px){
             &:nth-child(n){
                 margin-top: 0;
             }
