@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://kirillprogrammertop1gg.github.io/normalize/index.min.css">
     <link rel="stylesheet" href="./styles/portfolio.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="description" content="Сайт з портфоліом студії">
     <title>Portfolio</title>
 </head>
@@ -60,33 +61,33 @@
             <div class="container">
                 <ul class='filter'>
                     <li class="filter__item">
-                        <button type="button" class="filter__but" value="Фільтр усе">
+                        <button type="button" class="filter__but" value="Фільтр усе" data-aos="fade-down" data-aos-duration="1000">
                             Усе
                         </button>
                     </li>
                     <li class="filter__item">
-                        <button type="button" class="filter__but" value="Фільтр Веб-сайт">
+                        <button type="button" class="filter__but" value="Фільтр Веб-сайт" data-aos="fade-up" data-aos-duration="1000">
                             Веб-сайти
                         </button>
                     </li>
                     <li class="filter__item">
-                        <button type="button" class="filter__but" value="Фільтр Додатки">
+                        <button type="button" class="filter__but" value="Фільтр Додатки" data-aos="fade-down" data-aos-duration="1000">
                             Додатки
                         </button>
                     </li>
                     <li class="filter__item">
-                        <button type="button" class="filter__but" value="Фільтр Дизайн">
+                        <button type="button" class="filter__but" value="Фільтр Дизайн" data-aos="fade-up" data-aos-duration="1000">
                             Дизайн
                         </button>
                     </li>
                     <li class="filter__item">
-                        <button type="button" class="filter__but" value="Фільтр Маркетинг">
+                        <button type="button" class="filter__but" value="Фільтр Маркетинг" data-aos="fade-down" data-aos-duration="1000">
                             Маркетинг
                         </button>
                     </li>
                 </ul>
                 <ul class='projects'>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-left" data-aos-duration="700">
                         <picture class="projects__img">
                             <source srcset="./imgs/imgPorfolios/optimized/project1-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project1-desktop@2x.webp 2x"
                                 media="(min-width: 1200px)">
@@ -104,7 +105,7 @@
                             <p class="projects__category">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-up" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project2-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project2-desktop@2x.webp 2x"
@@ -124,7 +125,7 @@
                             <p class="projects__category">Дизайн</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-right" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project3-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project3-desktop@2x.webp 2x"
@@ -144,7 +145,7 @@
                             <p class="projects__category">Застосунок</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-right" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project4-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project4-desktop@2x.webp 2x"
@@ -164,7 +165,7 @@
                             <p class="projects__category">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-down" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project5-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project5-desktop@2x.webp 2x"
@@ -184,7 +185,7 @@
                             <p class="projects__category">Застосунок</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-left" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project6-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project6-desktop@2x.webp 2x"
@@ -204,7 +205,7 @@
                             <p class="projects__category">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-left" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project7-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project7-desktop@2x.webp 2x"
@@ -224,7 +225,7 @@
                             <p class="projects__category">Дизайн</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-up" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project8-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project8-desktop@2x.webp 2x"
@@ -244,7 +245,7 @@
                             <p class="projects__category">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item" data-aos="flip-right" data-aos-duration="700">
                         <picture class="projects__img">
                             <source
                                 srcset="./imgs/imgPorfolios/optimized/project9-desktop@1x.webp 1x, ./imgs/imgPorfolios/optimized/project9-desktop@2x.webp 2x"
@@ -382,7 +383,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init();
+
         const refsMenu = {
             openMenuBtn: document.querySelector("[data-open-Menu]"),
             closeMenuBtn: document.querySelector("[data-close-Menu]"),

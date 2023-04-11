@@ -1,5 +1,11 @@
 /* header */
 .header-page{
+    position: sticky;
+    background-color: $header-bg;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
     &__container{
         @include flex(space-between);
         height: inherit;

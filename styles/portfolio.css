@@ -90,6 +90,14 @@ img {
 }
 
 /* header */
+.header-page {
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
 .header-page__container {
   display: flex;
   align-items: center;
@@ -476,6 +484,7 @@ img {
   height: 100%;
   background-color: #FFF;
   position: fixed;
+  z-index: 5;
   right: 0;
   top: 0;
   padding: 10px 15px 48px 40px;
