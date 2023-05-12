@@ -1002,13 +1002,31 @@ img {
 }
 .form-section__textarea {
   font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: auto;
+  letter-spacing: 0.01em;
+  color: #212121;
+  font-family: "Roboto";
+  padding: 12px 16px;
+}
+.form-section__textarea::-moz-placeholder {
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: auto;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   font-family: "Roboto";
-  padding: 12px 16px;
+}
+.form-section__textarea::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: auto;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto";
 }
 @media screen and (min-width: 320px) {
   .form-section__textarea {
